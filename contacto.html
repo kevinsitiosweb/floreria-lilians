@@ -1307,99 +1307,245 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 </script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 
-  // OPCIONES DINÁMICAS
+  /* =========================================
+     OPCIONES DINÁMICAS
+     ========================================= */
+
   const opcionesProductos = {
-    "Ramos de rosas": ["24 Rosas","48 Rosas","72 Rosas","100 Rosas"],
-    "Tulipanes": ["Rosa","Fucsia","Rojo","Blanco"],
-    "Ramos de girasoles": ["Con dollar","Con clavelinas","Con 24 rosas"],
-    "Maxi ramos": ["200 rosas","300 rosas"],
-    "Maxi Enamorados": ["Corazón 100 rosas","Maxi corazón 200 rosas"],
-    "Jarrones": ["Lechero","Mix","Cumpleañero","Delirio"],
-    "Ramos de lilis": ["Lilis + follaje","Lilis + 24 rosas","Lilis + gerberas"],
-    "Gerberas": ["20 ramo","40 ramo","20 jarrón"],
-    "Ramos coreanos": ["Chico","Grande"],
-    "Cajas": ["Espiral","Esfera","Suspiro"],
-    "Cajas especiales": ["Corazón","Mitad y mitad","Lily"],
-    "Graduaciones": ["Caja con globo","Caja graduación"],
-    "Globos burbuja": ["Látex","Metálico","Orbz","Personalizado"],
-    "Promos": ["Jarrón 48 rosas","Globo + 48 rosas","48 rosas ramo"],
-    "Desayunos": ["Sencillo","Premium"]
+    "Ramos de rosas": ["24 Rosas", "48 Rosas", "72 Rosas", "100 Rosas"],
+    "Tulipanes": ["Rosa", "Fucsia", "Rojo", "Blanco"],
+    "Ramos de girasoles": ["Con dollar", "Con clavelinas", "Con 24 rosas"],
+    "Maxi ramos": ["200 rosas", "300 rosas"],
+    "Maxi Enamorados": ["Corazón 100 rosas", "Maxi corazón 200 rosas"],
+    "Jarrones": ["Lechero", "Mix", "Cumpleañero", "Delirio"],
+    "Ramos de lilis": ["Lilis + follaje", "Lilis + 24 rosas", "Lilis + gerberas"],
+    "Gerberas": ["20 ramo", "40 ramo", "20 jarrón"],
+    "Ramos coreanos": ["Chico", "Grande"],
+    "Cajas": ["Espiral", "Esfera", "Suspiro"],
+    "Cajas especiales": ["Corazón", "Mitad y mitad", "Lily"],
+    "Graduaciones": ["Caja con globo", "Caja graduación"],
+    "Globos burbuja": ["Látex", "Metálico", "Orbz", "Personalizado"],
+    "Promos": ["Jarrón 48 rosas", "Globo + 48 rosas", "48 rosas ramo"],
+
+    "Desayuno Sencillo": ["Sencillo"],
+    "Desayuno Premium": ["Premium"]
   };
+
 
   const productoSelect = document.getElementById("producto");
   const opcionesSelect = document.getElementById("opciones");
 
-  // VALIDACIÓN (MUY IMPORTANTE)
-  if (!productoSelect || !opcionesSelect) {
-    console.error("No existen #producto o #opciones en el HTML");
-    return;
-  }
 
-  // CAMBIO DE OPCIONES
-  productoSelect.addEventListener("change", function() {
-    opcionesSelect.innerHTML = "<option value=''>Selecciona</option>";
+  /* =========================================
+     CAMBIAR VARIANTES SEGÚN PRODUCTO
+     ========================================= */
 
-    const lista = opcionesProductos[this.value];
+  if (productoSelect && opcionesSelect) {
 
-    if (lista) {
-      lista.forEach(op => {
-        const option = document.createElement("option");
-        option.value = op;
-        option.textContent = op;
-        opcionesSelect.appendChild(option);
-      });
-    }
-  });
+    productoSelect.addEventListener("change", function() {
 
-  // FORM
-  const form = document.querySelector('[data-landingsite-contact-form]');
-  
-  if (!form) {
-    console.error("No se encontró el formulario");
-    return;
-  }
+      opcionesSelect.innerHTML =
+        "<option value=''>Selecciona una opción</option>";
 
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
+      const lista = opcionesProductos[this.value];
 
-    const nombre = form.querySelector('[name="name"]')?.value || '';
-    const telefono = form.querySelector('[name="phone"]')?.value || '';
-    const email = form.querySelector('[name="email"]')?.value || '';
-    const producto = form.querySelector('[name="producto"]')?.value || '';
-    const tipo = form.querySelector('[name="opciones"]')?.value || '';
-    const fecha = form.querySelector('[name="date"]')?.value || '';
-    const direccion = form.querySelector('[name="address"]')?.value || '';
-    const mensajeExtra = form.querySelector('[name="message"]')?.value || '';
+      if (lista) {
 
-    let extras = [];
-    form.querySelectorAll('input[type=checkbox]:checked').forEach(el => {
-      extras.push(el.value);
+        lista.forEach(function(op) {
+
+          const option = document.createElement("option");
+
+          option.value = op;
+          option.textContent = op;
+
+          opcionesSelect.appendChild(option);
+
+        });
+
+      }
+
     });
 
-    const numero = "528120005880";
+  }
 
-    const mensaje = ` Hola, Quiero hacer un pedido 
 
- Nombre: ${nombre}
- Teléfono: ${telefono}
- Email: ${email || 'No proporcionado'}
+  /* =========================================
+     FORMULARIO
+     ========================================= */
 
- Producto: ${producto || 'No especificado'}
- Tipo: ${tipo || 'No especificado'}
- Extras: ${extras.length ? extras.join(", ") : "Ninguno"}
+  const form = document.getElementById("pedidoForm");
 
- Fecha: ${fecha || 'Sin fecha'}
- Dirección: ${direccion || 'Sin dirección'}
+  if (!form) {
+    console.error("No se encontró el formulario #pedidoForm");
+    return;
+  }
 
- Detalles: ${mensajeExtra || 'Sin detalles'}`;
 
-    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+  form.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+
+    /* =========================================
+       SUCURSAL SELECCIONADA
+       ========================================= */
+
+    const sucursal = form.querySelector(
+      'input[name="sucursal"]:checked'
+    )?.value;
+
+
+    if (!sucursal) {
+      alert("Selecciona una sucursal.");
+      return;
+    }
+
+
+    /* =========================================
+       WHATSAPP DE CADA SUCURSAL
+       ========================================= */
+
+    const numeros = {
+
+      Monterrey: "528120005880",
+
+      Guadalupe: "528135771074"
+
+    };
+
+
+    const numero = numeros[sucursal];
+
+
+    if (!numero) {
+      alert("No se encontró el WhatsApp de la sucursal.");
+      return;
+    }
+
+
+    /* =========================================
+       DATOS DEL CLIENTE
+       ========================================= */
+
+    const nombre =
+      form.querySelector('[name="name"]')?.value.trim() || "";
+
+    const telefono =
+      form.querySelector('[name="phone"]')?.value.trim() || "";
+
+    const email =
+      form.querySelector('[name="email"]')?.value.trim() || "";
+
+
+    /* =========================================
+       PRODUCTO
+       ========================================= */
+
+    const producto =
+      form.querySelector('[name="producto"]')?.value || "";
+
+    const tipo =
+      form.querySelector('[name="opciones"]')?.value || "";
+
+
+    /* =========================================
+       EXTRAS
+       ========================================= */
+
+    const extras = [];
+
+    form.querySelectorAll(
+      'input[name="extras"]:checked'
+    ).forEach(function(el) {
+
+      extras.push(el.value);
+
+    });
+
+
+    /* =========================================
+       ENTREGA
+       ========================================= */
+
+    const fecha =
+      form.querySelector('[name="date"]')?.value || "";
+
+    const entrega =
+      form.querySelector(
+        'input[name="entrega"]:checked'
+      )?.value || "";
+
+    const direccion =
+      form.querySelector('[name="address"]')?.value.trim() || "";
+
+
+    /* =========================================
+       DETALLES
+       ========================================= */
+
+    const mensajeExtra =
+      form.querySelector('[name="message"]')?.value.trim() || "";
+
+
+    /* =========================================
+       CREAR MENSAJE DE WHATSAPP
+       ========================================= */
+
+    let mensaje = `🌷 *NUEVO PEDIDO - FLORERÍA LILIANS*
+
+🏪 *Sucursal:* ${sucursal}
+
+👤 *DATOS DEL CLIENTE*
+
+*Nombre:* ${nombre}
+*Teléfono:* ${telefono}
+*Correo:* ${email || "No proporcionado"}
+
+💐 *PEDIDO*
+
+*Producto:* ${producto || "No especificado"}
+*Tipo / Variante:* ${tipo || "No especificado"}
+*Extras:* ${extras.length ? extras.join(", ") : "Sin extras"}
+
+📅 *Fecha:* ${fecha || "Sin fecha"}
+🚚 *Entrega:* ${entrega || "No especificada"}`;
+
+
+    /* =========================================
+       DIRECCIÓN SOLO SI ES A DOMICILIO
+       ========================================= */
+
+    if (entrega === "A domicilio") {
+
+      mensaje += `
+
+📍 *Dirección:* ${direccion || "No especificada"}`;
+
+    }
+
+
+    mensaje += `
+
+📝 *DETALLES*
+
+${mensajeExtra || "Sin detalles adicionales"}`;
+
+
+    /* =========================================
+       ABRIR WHATSAPP
+       ========================================= */
+
+    const url =
+      `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
     window.open(url, "_blank");
+
   });
 
 });
