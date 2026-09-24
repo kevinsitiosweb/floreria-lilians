@@ -1,6 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<style>
+  /* =========================================
+     IMÁGENES RESPONSIVE DEL CATÁLOGO
+     ========================================= */
+
+  #catalog-products .product-image-container {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #catalog-products .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+
+  /* CELULAR PEQUEÑO */
+  @media (max-width: 480px) {
+    #catalog-products .product-image-container {
+      height: 300px;
+    }
+  }
+
+  /* TABLET */
+  @media (min-width: 640px) {
+    #catalog-products .product-image-container {
+      height: 280px;
+    }
+  }
+
+  /* COMPUTADORA */
+  @media (min-width: 1024px) {
+    #catalog-products .product-image-container {
+      height: 260px;
+    }
+  }
+
+  /* PANTALLAS GRANDES */
+  @media (min-width: 1280px) {
+    #catalog-products .product-image-container {
+      height: 250px;
+    }
+  }
+</style>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +74,7 @@
 
 
 </head>
+
 
 <body>
 
@@ -1443,6 +1496,50 @@
 
 </div>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const productImages = document.querySelectorAll("#catalog-products img");
+
+  productImages.forEach(function (img) {
+
+    /* Corrige rutas img\foto.jpg a img/foto.jpg */
+    const src = img.getAttribute("src");
+
+    if (src) {
+      img.setAttribute("src", src.replace(/\\/g, "/"));
+    }
+
+    /* Quitamos el recorte y zoom anteriores */
+    img.classList.remove(
+      "h-64",
+      "object-cover",
+      "group-hover:scale-110",
+      "transition-transform",
+      "duration-700"
+    );
+
+    /* Nueva configuración responsive */
+    img.classList.add("product-image");
+
+    /* Contenedor de la fotografía */
+    const container = img.parentElement;
+
+    if (container) {
+      container.classList.add("product-image-container");
+    }
+
+  });
+
+});
+</script>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
+
 <script src="script.js" defer></script>
 </body>
 </html>
