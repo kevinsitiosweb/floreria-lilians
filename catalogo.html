@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Florería Lilians</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- FAVICON PRO -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icono.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icono.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icono.png">
+  <link rel="shortcut icon" href="img/icono.png">
+
+
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+<header id="global-header" class="code-section">
+  <nav class="bg-[#FEF7FA] backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-[#F5E0E9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 lg:h-20">
+
+        <a href="index.html" class="flex items-center">
+          <img src="https://assets.ls-assets.com/uploads/3d736927-68b0-4671-b1f8-a9d3042dabe2/6b09969b-5565-42d5-8eed-a28f91ef01d9.png?w=768"
+            alt="Florería Lilians" class="h-10 lg:h-12 w-auto">
+        </a>
+
+        <!-- DESKTOP MENU -->
+        <div class="hidden lg:flex items-center space-x-8">
+
+          <a href="catalogo.html"
+            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+            Catálogo
+          </a>
+
+          <a href="entregas.html"
+            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+            Entregas
+          </a>
+
+          <a href="opiniones.html"
+            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+            Opiniones
+          </a>
+
+          <a href="sobre-nosotros.html"
+            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+            Sobre Nosotros
+          </a>
+
+          <a href="contacto.html"
+            class="bg-[#A8D5BA] text-[#2C2C2C] px-6 py-2.5 rounded-full font-semibold hover:bg-[#95C9A8] hover:text-[#1A1A1A] transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+            <i class="fab fa-whatsapp mr-2"></i>Ordena por WhatsApp
+          </a>
+
+        </div>
+
+        <!-- MOBILE BUTTON -->
+        <button data-landingsite-mobile-menu-toggle=""
+          class="lg:hidden p-2 rounded-lg hover:bg-[#FFE5F0] transition-colors duration-300"
+          aria-label="Abrir menú">
+          <svg class="w-6 h-6 text-[#2C2C2C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div data-landingsite-mobile-menu=""
+      class="hidden lg:hidden bg-[#FEF7FA] border-t border-[#F5E0E9]">
+
+      <div class="px-4 py-4 space-y-3">
+
+        <a href="catalogo.html"
+          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
+          Catálogo
+        </a>
+
+        <a href="entregas.html"
+          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
+          Entregas
+        </a>
+
+        <a href="opiniones.html"
+          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
+          Opiniones
+        </a>
+
+        <a href="sobre-nosotros.html"
+          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
+          Sobre Nosotros
+        </a>
+
+        <a href="contacto.html"
+          class="block bg-[#A8D5BA] text-[#2C2C2C] px-6 py-3 rounded-full font-semibold text-center mt-4 hover:bg-[#95C9A8] transition-all">
+          <i class="fab fa-whatsapp mr-2"></i>Ordena por WhatsApp
+        </a>
+
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+  <section id="catalog-hero" class="code-section relative overflow-hidden">
+  <!-- Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#F8C8DC] via-[#FDF0F5] to-[#A8D5BA]/30"></div>
+  <div class="absolute top-20 right-10 w-96 h-96 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-20 left-10 w-80 h-80 bg-[#F8C8DC]/30 rounded-full blur-3xl"></div>
+  
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+    <div class="text-center max-w-3xl mx-auto">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm text-[#2C2C2C] px-4 py-2 rounded-full text-sm font-semibold mb-6 shadow-lg">
+        <i class="fas fa-flower text-[#D4AF37]"></i>
+        <span>+50 Arreglos Disponibles</span>
+      </div>
+      
+      <!-- Headline -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C2C2C] mb-6">
+        Nuestro
+        <span class="text-[#D4AF37]"> Catálogo</span>
+      </h1>
+      
+      <!-- Subheadline -->
+      <p class="text-xl text-[#6B6B6B] mb-8">
+        Descubre nuestra colección completa de arreglos florales. 
+        Cada uno está creado con flores frescas y diseñado con amor para tu ocasión especial.
+      </p>
+      
+            <!-- Trust Indicators -->
+      <div class="flex flex-wrap justify-center gap-6 text-[#2C2C2C]">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-truck text-[#A8D5BA] text-xl"></i>
+          <span class="font-medium">Entrega el mismo día</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <i class="fas fa-heart text-[#F8C8DC] text-xl"></i>
+          <span class="font-medium">Flores 100% frescas</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <i class="fas fa-magic text-[#D4AF37] text-xl"></i>
+          <span class="font-medium">Personalización disponible</span>
+        </div>
+      </div>
+
+      <!-- Notas importantes (diseño horizontal tipo badges) -->
+<div class="mt-6 flex flex-wrap justify-center gap-3 text-sm text-[#2C2C2C]">
+
+  <div class="flex items-center gap-2 bg-white/70 backdrop-blur-md border border-[#F8C8DC] px-4 py-2 rounded-full shadow-sm">
+    <span class="text-[#D4AF37] font-bold">•</span>
+    <span>Los precios varían constantemente</span>
+  </div>
+
+  <div class="flex items-center gap-2 bg-white/70 backdrop-blur-md border border-[#A8D5BA] px-4 py-2 rounded-full shadow-sm">
+    <span class="text-[#A8D5BA] font-bold">•</span>
+    <span>Anticipos no son reembolsables</span>
+  </div>
+
+  <div class="flex items-center gap-2 bg-white/70 backdrop-blur-md border border-[#D4AF37] px-4 py-2 rounded-full shadow-sm">
+    <span class="text-[#F8C8DC] font-bold">•</span>
+    <span>Para cotizar envíos mándanos la dirección completa</span>
+  </div>
+
+</div>
+
+
+  </div>
+  </div>
+
+  <section id="catalog-products" class="code-section bg-[#FEF7FA] py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+      
+      <!-- Product 1 -->
+          <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+            <div class="relative overflow-hidden">
+              <img src="img\ramo_rosas.jpg" alt="Ramo romántico" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute top-4 left-4 flex flex-col gap-2">
+                <span class="bg-[#D4AF37] text-white text-xs font-bold px-3 py-1 rounded-full">Más Vendido</span>
+                <span class="bg-[#A8D5BA] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1"><i class="fas fa-truck text-xs"></i> Entrega Hoy</span>
+              </div>
+            </div>
+          <div class="p-6">
+      <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Ramos de rosas</h3>
+
+      <p class="text-[#6B6B6B] text-sm mb-4">
+        Ramos elegantes de rosas frescas en envoltura premium.
+      </p>
+
+    <!-- Opciones (2 columnas compactas SIN crecer hacia abajo) -->
+    <div class="grid grid-cols-2 gap-2 mb-4 text-[11px]">
+
+      <div class="bg-[#F8C8DC]/20 border border-[#F8C8DC] px-2 py-1 rounded-full flex items-center justify-center whitespace-nowrap overflow-hidden text-ellipsis">
+        24 Rosas (1 color)
+      </div>
+
+      <div class="bg-[#A8D5BA]/20 border border-[#A8D5BA] px-2 py-1 rounded-full flex items-center justify-center whitespace-nowrap overflow-hidden text-ellipsis">
+        48 Rosas (2 colores)
+      </div>
+
+      <div class="bg-[#D4AF37]/20 border border-[#D4AF37] px-2 py-1 rounded-full flex items-center justify-center whitespace-nowrap overflow-hidden text-ellipsis">
+        72 Rosas (3 colores)
+      </div>
+
+      <div class="bg-[#F5B5CD]/20 border border-[#F5B5CD] px-2 py-1 rounded-full flex items-center justify-center whitespace-nowrap overflow-hidden text-ellipsis">
+        100 Rosas (4 colores)
+      </div>
+
+    </div>
+
+
+
+    <!-- Nota compacta tipo badge -->
+    <div class="mb-4 flex justify-center">
+      <div class="text-[11px] text-[#6B6B6B] bg-[#FEF7FA] border border-[#F8C8DC] px-3 py-1 rounded-full whitespace-nowrap">
+        Extras se cobran por separado
+      </div>
+    </div>
+
+
+      <!-- Precio + botón -->
+      <div class="flex items-center justify-between">
+        <span class="text-2xl font-bold text-[#D4AF37]">$400 - $1,400</span>
+        <a href="contacto.html" class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+          <i class="fab fa-whatsapp text-lg"></i>
+        </a>
+      </div>
+    </div>
+</div>
+
+<!-- Product 2 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\tulipanes.jpg" alt="Tulipanes" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+    
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#A8D5BA] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
+        <i class="fas fa-clock text-xs"></i> Bajo pedido
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Tulipanes</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-4">
+      10 tulipanes, un solo color a elección
+    </p>
+
+    <!-- Colores disponibles (FULL WIDTH) -->
+    <div class="grid grid-cols-2 gap-2 mb-4 text-[11px]">
+
+      <div class="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-full bg-[#F8C8DC]/20 border border-[#F8C8DC]">
+        <span class="w-2 h-2 rounded-full bg-pink-300"></span>
+        <span>Rosa</span>
+      </div>
+
+      <div class="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-full bg-[#F5B5CD]/20 border border-[#F5B5CD]">
+        <span class="w-2 h-2 rounded-full bg-pink-500"></span>
+        <span>Fucsia</span>
+      </div>
+
+      <div class="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]">
+        <span class="w-2 h-2 rounded-full bg-red-500"></span>
+        <span>Rojo</span>
+      </div>
+
+      <div class="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-full bg-gray-100 border border-gray-300">
+        <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+        <span>Blanco</span>
+      </div>
+
+    </div>
+
+    <!-- Nota (FULL WIDTH) -->
+    <div class="mb-4">
+      <div class="w-full text-[11px] text-[#6B6B6B] bg-white border border-[#F8C8DC] px-3 py-2 rounded-lg text-center shadow-sm">
+        Pedido con 3 días de anticipación
+      </div>
+    </div>
+
+    <!-- Precio -->
+    <div class="flex items-center justify-between">
+      <span class="text-2xl font-bold text-[#D4AF37]">$850</span>
+      
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+  </div>
+</div>
+      
+
+
+
+<!-- Product 3 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\girasoles.jpg"
+     alt="Ramos de girasoles" 
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">    
+    <div class="absolute top-4 left-4 flex flex-col gap-2">
+      <span class="bg-[#A8D5BA] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
+        <i class="fas fa-truck text-xs"></i> Entrega Hoy
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Ramos de girasoles</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Combinaciones disponibles con girasoles frescos
+    </p>
+
+    <!-- Opciones -->
+    <div class="grid grid-cols-2 gap-2 mb-3 text-[11px]">
+
+      <div class="flex items-center justify-center px-3 py-1 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37] text-center leading-tight">
+        Girasoles con dollar
+      </div>
+
+      <div class="flex items-center justify-center px-3 py-1 rounded-full bg-[#A8D5BA]/10 border border-[#A8D5BA] text-center leading-tight">
+        Girasoles con<br>clavelinas
+      </div>
+
+      <!-- Centrado abajo -->
+      <div class="col-span-2 flex justify-center">
+        <div class="px-3 py-1 rounded-full bg-[#F8C8DC]/20 border border-[#F8C8DC] text-center leading-tight">
+          Girasoles con 24 rosas
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Nota -->
+    <div class="mb-3 flex justify-center">
+      <div class="text-[11px] text-[#6B6B6B] bg-[#FEF7FA] border border-[#F8C8DC] px-3 py-1 rounded-full">
+        Cada arreglo incluye 7 girasoles
+      </div>
+    </div>
+
+    <!-- Precio + botón -->
+  <div class="flex items-center justify-between">
+    <span class="text-2xl font-bold text-[#D4AF37]">$480 - $820</span>
+    <a href="contacto.html" class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+      <i class="fab fa-whatsapp text-lg"></i>
+    </a>
+  </div>
+
+  </div>
+
+</div>
+
+<!-- Product 4 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\maxi_ramos.jpg"
+     alt="Maxi ramos"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#F8C8DC] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full">
+        Novedad
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Maxi ramos</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-4">
+      Ramos de gran tamaño con combinaciones de colores
+    </p>
+
+    <!-- Opciones -->
+    <div class="grid grid-cols-2 gap-2 mb-4 text-[11px]">
+
+      <div class="w-full flex items-center justify-center px-3 py-2 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37] text-center leading-tight">
+        200 rosas<br>hasta 5 colores
+      </div>
+
+      <div class="w-full flex items-center justify-center px-3 py-2 rounded-full bg-[#A8D5BA]/10 border border-[#A8D5BA] text-center leading-tight">
+        300 rosas<br>hasta 5 colores
+      </div>
+
+    </div>
+
+    <!-- Nota (FULL WIDTH) -->
+    <div class="mb-4">
+      <div class="w-full text-[11px] text-[#6B6B6B] bg-white border border-[#F8C8DC] px-3 py-2 rounded-lg text-center shadow-sm">
+        Extras se cobran por separado
+      </div>
+    </div>
+
+    <!-- Precio + botón -->
+    <div class="flex items-center justify-between">
+      <span class="text-2xl font-bold text-[#D4AF37]">$2,800 - $4,100</span>
+
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Product 5 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\corazon.jpg"
+     alt="Corazón de rosas"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#D4AF37] text-white text-xs font-bold px-3 py-1 rounded-full">
+        Especial
+      </span>
+    </div>
+  </div>
+
+  <!-- CONTENIDO -->
+  <div class="p-6 flex flex-col flex-grow">
+
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-1">Maxi Enamorados</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Diseños en forma de corazón para ocasiones especiales
+    </p>
+
+    <!-- OPCIONES (AHORA LLENAN TODO) -->
+    <div class="flex flex-col gap-2 flex-grow">
+
+      <!-- Económico -->
+      <div class="flex-1 rounded-xl border border-[#A8D5BA] bg-[#A8D5BA]/10 px-3 py-3 flex flex-col justify-center text-center">
+        <span class="font-semibold">Corazon de rosas</span>
+        <span class="text-[11px] text-[#6B6B6B] mt-1">
+          100 rosas (1 o 2 colores)
+        </span>
+      </div>
+
+      <!-- Premium -->
+      <div class="flex-1 rounded-xl border border-[#F8C8DC] bg-[#F8C8DC]/10 px-3 py-3 flex flex-col justify-center text-center">
+        <span class="font-semibold">Maxi corazón</span>
+        <span class="text-[11px] text-[#6B6B6B] mt-1">
+          200 rosas (1 o 2 colores)<br>
+          Incluye listón personalizado y moño
+        </span>
+      </div>
+
+    </div>
+
+    <!-- PRECIO -->
+    <div class="flex items-center justify-between mt-4">
+      <span class="text-2xl font-bold text-[#D4AF37]">$1,900 - $3,550</span>
+
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Product 6 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\jarron.jpg"
+     alt="Jarrones florales"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#A8D5BA] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full">
+        Variedad
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Jarrones</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Diseños florales en jarrón para diferentes ocasiones
+    </p>
+
+    <!-- Opciones -->
+    <div class="grid grid-cols-2 gap-2 mb-3 text-[11px]">
+
+      <div class="flex items-center justify-center px-3 py-1 rounded-full bg-[#F8C8DC]/20 border border-[#F8C8DC] text-center leading-tight">
+        Jarrón lechero
+      </div>
+
+      <div class="flex items-center justify-center px-3 py-1 rounded-full bg-[#A8D5BA]/10 border border-[#A8D5BA] text-center leading-tight">
+        Jarrón mix
+      </div>
+
+      <div class="flex items-center justify-center px-3 py-1 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37] text-center leading-tight">
+        Jarrón cumpleañero
+      </div>
+
+      <div class="flex items-center justify-center px-3 py-1 rounded-full bg-gray-100 border border-gray-300 text-center leading-tight">
+        Jarrón delirio
+      </div>
+
+    </div>
+
+    <!-- Descripción -->
+    <div class="mb-3 text-[11px] text-[#6B6B6B] space-y-1 leading-tight">
+
+      <p><strong>Mix:</strong> Incluye diferentes tipos de flor según disponibilidad y temporada</p>
+
+      <p><strong>Cumpleañero:</strong> 24 rosas + globo con mensaje o metálico (corazón o estrella)</p>
+
+      <p><strong>Delirio:</strong> Jarrón con lilis y variedad de follaje</p>
+
+    </div>
+
+    <!-- Nota -->
+    <div class="mb-3 flex justify-center">
+      <div class="text-[11px] text-[#6B6B6B] bg-[#FEF7FA] border border-[#F8C8DC] px-3 py-1 rounded-full text-center">
+        El diseño del jarrón puede variar según disponibilidad
+      </div>
+    </div>
+
+    <!-- Precio + botón -->
+    <div class="flex items-center justify-between">
+      <span class="text-2xl font-bold text-[#D4AF37]">$650 - $950</span>
+
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Product 7 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\lilis.jpg"
+     alt="Ramos de lilis"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#A8D5BA] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full">
+        Elegante
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Ramos de lilis</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-4">
+      Arreglos con lilis frescas y combinaciones florales
+    </p>
+
+    <!-- Opciones -->
+    <div class="grid grid-cols-2 gap-2 mb-4 text-[11px]">
+
+      <div class="flex items-center justify-center px-3 py-2 rounded-full bg-[#F8C8DC]/20 border border-[#F8C8DC] text-center leading-tight">
+        Lilis + follaje
+      </div>
+
+      <div class="flex items-center justify-center px-3 py-2 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37] text-center leading-tight">
+        Lilis + 24 rosas
+      </div>
+
+      <div class="col-span-2">
+        <div class="w-full px-3 py-2 rounded-full bg-[#A8D5BA]/10 border border-[#A8D5BA] text-center leading-tight">
+          Lilis + 10 gerberas
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Detalles -->
+    <div class="mb-4 space-y-2">
+
+      <div class="w-full text-[11px] text-[#6B6B6B] bg-white border border-[#D4AF37] px-3 py-2 rounded-lg text-center shadow-sm">
+        Rosas: color a elección
+      </div>
+
+      <div class="w-full text-[11px] text-[#6B6B6B] bg-white border border-[#A8D5BA] px-3 py-2 rounded-lg text-center shadow-sm">
+        Gerberas: un solo color o combinadas
+      </div>
+
+      <div class="w-full text-[11px] text-[#6B6B6B] bg-white border border-[#F8C8DC] px-3 py-2 rounded-lg text-center shadow-sm">
+        Cada arreglo incluye 7 varitas de lilis
+      </div>
+
+    </div>
+
+    <!-- Precio + botón -->
+    <div class="flex items-center justify-between">
+      <span class="text-2xl font-bold text-[#D4AF37]">$700 - $1,200</span>
+
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Product 8 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\gerbera.jpg"
+     alt="Gerberas"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#F8C8DC] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full">
+        Colorido
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6 flex flex-col flex-grow">
+
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-1">Gerberas</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Arreglos vibrantes con gerberas combinadas
+    </p>
+
+    <!-- CONTENIDO QUE CRECE -->
+    <div class="flex flex-col flex-grow gap-3">
+
+      <!-- Opciones -->
+      <div class="grid grid-cols-2 gap-2 text-[11px]">
+
+        <div class="flex items-center justify-center px-3 py-2 rounded-full bg-[#A8D5BA]/10 border border-[#A8D5BA] text-center leading-tight">
+          20 en ramo
+        </div>
+
+        <div class="flex items-center justify-center px-3 py-2 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37] text-center leading-tight">
+          40 en ramo
+        </div>
+
+        <div class="col-span-2">
+          <div class="w-full px-3 py-2 rounded-full bg-[#F8C8DC]/20 border border-[#F8C8DC] text-center leading-tight">
+            20 en jarrón
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Notas QUE CRECEN -->
+      <div class="flex flex-col gap-2 flex-grow justify-center">
+
+        <div class="w-full text-[11px] text-[#6B6B6B] bg-white border border-[#F8C8DC] px-3 py-2 rounded-lg text-center shadow-sm">
+          Solo disponibles en colores combinados
+        </div>
+
+        <div class="w-full text-[11px] text-[#6B6B6B] bg-white border border-[#A8D5BA] px-3 py-2 rounded-lg text-center shadow-sm">
+          Extras se cobran por separado
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Precio -->
+    <div class="flex items-center justify-between mt-4">
+      <span class="text-2xl font-bold text-[#D4AF37]">$650 - $1,300</span>
+
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Product 9 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col h-full">
+  
+  <!-- Imagen -->
+  <div class="relative overflow-hidden">
+    <img src="img\coreanos.jpg"
+     alt="Ramos coreanos"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#D4AF37] text-white text-xs font-bold px-3 py-1 rounded-full">
+        Tendencia
+      </span>
+    </div>
+  </div>
+
+  <!-- Contenido -->
+  <div class="p-6 flex flex-col flex-grow">
+
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Ramos coreanos</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Diseños modernos con estilo coreano minimalista
+    </p>
+
+    <!-- OPCIONES (crecen) -->
+    <div class="grid grid-cols-2 gap-2 text-[11px] flex-1">
+
+      <div class="flex items-center justify-center px-3 py-3 rounded-xl bg-[#F8C8DC]/20 border border-[#F8C8DC] text-center h-full">
+        Tamaño chico
+      </div>
+
+      <div class="flex items-center justify-center px-3 py-3 rounded-xl bg-[#A8D5BA]/10 border border-[#A8D5BA] text-center h-full">
+        Tamaño grande
+      </div>
+
+    </div>
+
+    <!-- DETALLES (crecen también) -->
+    <div class="grid gap-2 text-[11px] mt-3 flex-1">
+
+      <div class="flex items-center justify-center w-full bg-white border border-[#D4AF37] px-3 py-3 rounded-xl text-center h-full">
+        Escoge tu color principal
+      </div>
+
+      <div class="flex items-center justify-center w-full bg-white border border-[#F8C8DC] px-3 py-3 rounded-xl text-center h-full">
+        Nosotros diseñamos tu arreglo
+      </div>
+
+      <div class="flex items-center justify-center w-full bg-white border border-[#A8D5BA] px-3 py-3 rounded-xl text-center h-full">
+        Flores sujetas a disponibilidad y temporada
+      </div>
+
+    </div>
+
+    <!-- Precio -->
+    <div class="flex items-center justify-between mt-4">
+      <span class="text-2xl font-bold text-[#D4AF37]">$900 - $1,600</span>
+
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Product 10 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\cajas1.png"
+     alt="Cajas de flores"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#D4AF37] text-white text-xs font-bold px-3 py-1 rounded-full">
+        Especial
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6 flex flex-col flex-grow">
+
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-1">Cajas</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Diseños en caja con combinaciones premium
+    </p>
+
+    <!-- CONTENIDO QUE LLENA -->
+    <div class="flex flex-col gap-2 flex-grow text-[11px]">
+
+      <!-- Caja Espiral -->
+      <div class="flex-1 rounded-xl border border-[#F8C8DC] bg-[#F8C8DC]/10 px-3 py-2 text-center leading-tight">
+        <span class="font-semibold block">Caja espiral</span>
+        Rosas, girasoles y follaje<br>
+        Globo metálico personalizado<br>
+        5 ferreros y moños
+      </div>
+
+      <!-- Caja Esfera -->
+      <div class="flex-1 rounded-xl border border-[#A8D5BA] bg-[#A8D5BA]/10 px-3 py-2 text-center leading-tight">
+        <span class="font-semibold block">Caja esfera</span>
+        80 a 100 rosas (1 o 2 colores)<br>
+        Caja mediana<br>
+        Con o sin moño
+      </div>
+
+      <!-- Caja Suspiro -->
+      <div class="flex-1 rounded-xl border border-[#D4AF37]/30 bg-[#D4AF37]/10 px-3 py-2 text-center leading-tight">
+        <span class="font-semibold block">Caja suspiro</span>
+        80 a 100 rosas (1 o 2 colores)<br>
+        Caja mediana<br>
+        Follaje dollar y/o nube
+      </div>
+
+    </div>
+
+    <!-- Precio -->
+    <div class="flex items-center justify-between mt-4">
+      <span class="text-2xl font-bold text-[#D4AF37]">$1,500 - $2,650</span>
+
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Product 11 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\cajas2.jpg"
+     alt="Cajas especiales"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#A8D5BA] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full">
+        Personalizado
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6 flex flex-col flex-grow">
+
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-1">Cajas especiales</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Diseños personalizados con detalles únicos
+    </p>
+
+    <!-- CONTENIDO -->
+    <div class="flex flex-col gap-2 flex-grow text-[11px]">
+
+      <!-- Caja corazón -->
+      <div class="flex-1 rounded-xl border border-[#F8C8DC] bg-[#F8C8DC]/10 px-3 py-2 text-center leading-tight">
+        <span class="font-semibold block">Caja de corazón</span>
+        40 a 60 rosas<br>
+        Mensaje en vinil<br>
+        Ferreros se cobran aparte
+      </div>
+
+      <!-- Mitad y mitad -->
+      <div class="flex-1 rounded-xl border border-[#D4AF37]/40 bg-[#D4AF37]/10 px-3 py-2 text-center leading-tight">
+        <span class="font-semibold block">Caja mitad y mitad</span>
+        30 a 40 rosas<br>
+        24 ferreros<br>
+        Mensaje en vinil
+      </div>
+
+      <!-- Caja Lily -->
+      <div class="flex-1 rounded-xl border border-[#A8D5BA] bg-[#A8D5BA]/10 px-3 py-2 text-center leading-tight">
+        <span class="font-semibold block">Caja Lily</span>
+        Combinación de flores<br>
+        Mensaje en vinil
+      </div>
+
+    </div>
+
+    <!-- Nota -->
+    <div class="mt-3">
+      <div class="w-full text-[11px] text-[#6B6B6B] bg-white border border-[#F8C8DC] px-3 py-2 rounded-lg text-center shadow-sm">
+        Pídelo con 2 días de anticipación
+      </div>
+    </div>
+
+    <!-- Precio -->
+    <div class="flex items-center justify-between mt-4">
+      <span class="text-2xl font-bold text-[#D4AF37]">$2,500 - $2,800</span>
+
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Product 12 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\graduacion.jpg"
+     alt="Graduaciones"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#D4AF37] text-white text-xs font-bold px-3 py-1 rounded-full">
+        Graduación
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6 flex flex-col flex-grow">
+
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-1">Graduaciones</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Arreglos especiales para celebrar logros importantes
+    </p>
+
+    <!-- CONTENIDO -->
+    <div class="flex flex-col gap-2 flex-grow text-[11px]">
+
+      <!-- Caja con globo -->
+      <div class="flex-1 rounded-xl border border-[#F8C8DC] bg-[#F8C8DC]/10 px-3 py-2 text-center leading-tight">
+        <span class="font-semibold block">Caja con globo</span>
+        Rosas, clavelinas y astromelias<br>
+        Globo personalizado (color y mensaje)
+      </div>
+
+      <!-- Caja graduación -->
+      <div class="flex-1 rounded-xl border border-[#A8D5BA] bg-[#A8D5BA]/10 px-3 py-2 text-center leading-tight">
+        <span class="font-semibold block">Caja de graduación</span>
+        Rosas, girasoles y follaje
+      </div>
+
+      <!-- Extras -->
+      <div class="flex-1 rounded-xl border border-[#D4AF37]/40 bg-[#D4AF37]/10 px-3 py-2 text-center leading-tight">
+        <span class="font-semibold block">Extras</span>
+        Birrete (+$50)<br>
+        Diploma (+$30)<br>
+        Carta personalizada con moñito
+      </div>
+
+    </div>
+
+    <!-- COLORES DEL BIRRETE -->
+    <div class="mt-3">
+      <p class="text-[11px] text-[#6B6B6B] text-center mb-2">
+        Colores disponibles para birrete
+      </p>
+
+      <div class="grid grid-cols-2 gap-2 text-[11px]">
+
+        <div class="text-center px-2 py-1 rounded-full border border-black">Negro</div>
+        <div class="text-center px-2 py-1 rounded-full border border-pink-300">Rosa</div>
+        <div class="text-center px-2 py-1 rounded-full border border-gray-300">Blanco</div>
+        <div class="text-center px-2 py-1 rounded-full border border-red-400">Rojo</div>
+
+      </div>
+    </div>
+
+    <!-- Precio -->
+    <div class="flex items-center justify-between mt-4">
+      <span class="text-2xl font-bold text-[#D4AF37]">$1,200 - $1,500</span>
+
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Product 13 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\globo.jpg"
+     alt="Globos burbuja"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#A8D5BA] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full">
+        Personalizable
+      </span>
+    </div>
+  </div>
+
+  <!-- AQUÍ ESTABA EL ERROR -->
+  <div class="p-6 flex flex-col">
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Globos burbuja</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-4">
+      Globos personalizados para cualquier ocasión
+    </p>
+
+    <!-- Opciones -->
+    <div class="grid grid-cols-2 gap-2 mb-4 text-[11px]">
+
+      <div class="flex items-center justify-center px-3 py-2 rounded-full bg-[#F8C8DC]/20 border border-[#F8C8DC] text-center leading-tight">
+        Globos de látex
+      </div>
+
+      <div class="flex items-center justify-center px-3 py-2 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37] text-center leading-tight">
+        Metálico estrella o corazón
+      </div>
+
+      <div class="flex items-center justify-center px-3 py-2 rounded-full bg-[#A8D5BA]/10 border border-[#A8D5BA] text-center leading-tight">
+        Globo metálico orbz
+      </div>
+
+      <div class="flex items-center justify-center px-3 py-2 rounded-full bg-gray-100 border border-gray-300 text-center leading-tight">
+        Globo 24” personalizado
+      </div>
+
+    </div>
+
+    <!-- Notas -->
+    <div class="mb-4 space-y-2">
+
+      <div class="w-full text-[11px] text-[#6B6B6B] bg-white border border-[#F8C8DC] px-3 py-2 rounded-lg text-center shadow-sm">
+        Tiempo de vida: 1 a 2 días
+      </div>
+
+      <div class="w-full text-[11px] text-[#6B6B6B] bg-white border border-[#A8D5BA] px-3 py-2 rounded-lg text-center shadow-sm">
+        La duración depende del cuidado y el ambiente
+      </div>
+
+    </div>
+
+    <!-- Precio + botón -->
+    <div class="flex items-center justify-between mt-4">
+      <span class="text-2xl font-bold text-[#D4AF37]">$40 - $450</span>
+
+      <a href="contacto.html#contacto-form"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Product 14 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col h-full">
+  
+  <!-- Imagen -->
+  <div class="relative overflow-hidden">
+    <img src="img\promo.jpg"
+     alt="Promociones"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#D4AF37] text-white text-xs font-bold px-3 py-1 rounded-full">
+        Promos
+      </span>
+    </div>
+  </div>
+
+  <!-- Contenido -->
+  <div class="p-6 flex flex-col flex-grow">
+
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Promos</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Arreglos especiales con 48 rosas
+    </p>
+
+    <!-- OPCIONES (CRECEN) -->
+    <div class="grid grid-cols-2 gap-2 text-[11px] flex-1">
+
+      <div class="flex items-center justify-center px-3 py-3 rounded-xl bg-[#A8D5BA]/10 border border-[#A8D5BA] text-center h-full">
+        Jarrón 48 rosas + follaje
+      </div>
+
+      <div class="flex items-center justify-center px-3 py-3 rounded-xl bg-[#F8C8DC]/20 border border-[#F8C8DC] text-center h-full">
+        Globo burbuja + 48 rosas
+      </div>
+
+      <div class="col-span-2 flex">
+        <div class="w-full flex items-center justify-center px-3 py-3 rounded-xl bg-[#D4AF37]/10 border border-[#D4AF37] text-center h-full">
+          48 rosas en ramo (hasta 2 colores)
+        </div>
+      </div>
+
+    </div>
+
+    <!-- NOTAS (CRECEN TAMBIÉN) -->
+    <div class="grid gap-2 text-[11px] mt-3 flex-1">
+
+      <div class="flex items-center justify-center w-full bg-white border border-[#F8C8DC] px-3 py-3 rounded-xl text-center h-full">
+        Globo burbuja personalizado
+      </div>
+
+      <div class="flex items-center justify-center w-full bg-white border border-[#A8D5BA] px-3 py-3 rounded-xl text-center h-full">
+        Follaje se cobra por separado
+      </div>
+
+    </div>
+
+    <!-- PRECIO -->
+    <div class="flex items-center justify-between mt-4">
+      <span class="text-2xl font-bold text-[#D4AF37]">$890 - $1,100</span>
+
+      <a href="contacto.html#contacto-form"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Product 15 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\extras1.jpg"
+     alt="Extras"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#2C2C2C] text-white text-xs font-bold px-3 py-1 rounded-full">
+        Extras
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Extras</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Personaliza tu arreglo con detalles adicionales
+    </p>
+
+    <!-- Extras -->
+    <div class="grid grid-cols-2 gap-2 mb-3 text-[11px]">
+
+      <div class="px-3 py-2 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37] text-center">
+        Corona grande $380
+      </div>
+
+      <div class="px-3 py-2 rounded-full bg-[#F8C8DC]/20 border border-[#F8C8DC] text-center">
+        Mariposa $30
+      </div>
+
+      <div class="px-3 py-2 rounded-full bg-[#A8D5BA]/10 border border-[#A8D5BA] text-center">
+        Listón $100
+      </div>
+
+      <div class="px-3 py-2 rounded-full bg-gray-100 border border-gray-300 text-center">
+        Moño $50
+      </div>
+
+      <div class="px-3 py-2 rounded-full bg-[#F5B5CD]/20 border border-[#F5B5CD] text-center">
+        Pines $5
+      </div>
+
+      <div class="px-3 py-2 rounded-full bg-[#2C2C2C]/10 border border-[#2C2C2C] text-center">
+        Malla $100
+      </div>
+
+    </div>
+
+    <!-- Notas -->
+    <div class="mb-3 space-y-1 text-[11px] text-[#6B6B6B] text-center leading-tight">
+      <p>Mariposas disponibles en dorado o plateado</p>
+      <p>Moños: Rosa, Negro, Ivory / Beige</p>
+      <p>Malla: Negro o Blanco</p>
+    </div>
+
+    <!-- Nota extra -->
+    <div class="mb-3 flex justify-center">
+      <div class="text-[11px] text-[#6B6B6B] bg-[#FEF7FA] border border-[#F8C8DC] px-3 py-1 rounded-full text-center">
+        La imagen es de referencia
+      </div>
+    </div>
+
+    <!-- Botón -->
+    <div class="flex justify-end mt-3">
+      <a href="contacto.html#contacto-form"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Product 16 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\extras2.jpg"
+     alt="Extras especiales"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#2C2C2C] text-white text-xs font-bold px-3 py-1 rounded-full">
+        Extras
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Extras especiales</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Agrega detalles únicos a tu arreglo floral
+    </p>
+
+    <!-- Extras -->
+    <div class="grid grid-cols-2 gap-2 mb-3 text-[11px]">
+
+      <div class="px-3 py-2 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37] text-center leading-tight">
+        24 Ferreros corazón<br>$450
+      </div>
+
+      <div class="px-3 py-2 rounded-full bg-[#F8C8DC]/20 border border-[#F8C8DC] text-center leading-tight">
+        16 Ferreros entre rosas<br>$350
+      </div>
+
+      <div class="px-3 py-2 rounded-full bg-[#A8D5BA]/10 border border-[#A8D5BA] text-center leading-tight">
+        Inicial nubecita<br>$150
+      </div>
+
+      <div class="px-3 py-2 rounded-full bg-gray-100 border border-gray-300 text-center leading-tight">
+        Inicial espejo<br>$80
+      </div>
+
+    </div>
+
+    <!-- Detalles -->
+    <div class="mb-3 space-y-1 text-[11px] text-[#6B6B6B] text-center leading-tight">
+      <p>Ferreros incluidos únicamente (no incluye flores)</p>
+      <p>Inicial proporcional al tamaño del ramo</p>
+      <p>Disponible en oro o plata (cartulina espejo)</p>
+      <p>Pedir con 2 días de anticipación</p>
+    </div>
+
+    <!-- Nota -->
+    <div class="mb-3 flex justify-center">
+      <div class="text-[11px] text-[#6B6B6B] bg-[#FEF7FA] border border-[#F8C8DC] px-3 py-1 rounded-full text-center">
+        La imagen es de referencia
+      </div>
+    </div>
+
+    <!-- Botón -->
+    <div class="flex justify-end mt-3">
+      <a href="contacto.html#contacto-form"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Product 17 - Desayuno Sencillo -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
+
+  <!-- Imagen -->
+  <div class="relative overflow-hidden">
+    <img src="img/desayuno1.png"
+         alt="Desayuno Sencillo"
+         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#A8D5BA] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full">
+        Sencillo
+      </span>
+    </div>
+  </div>
+
+  <!-- Contenido -->
+  <div class="p-6 flex flex-col flex-grow">
+
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">
+      Desayuno Sencillo
+    </h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Un detalle perfecto para sorprender desde la mañana.
+    </p>
+
+    <!-- Incluye -->
+    <div class="p-3 rounded-lg border border-[#A8D5BA] bg-[#A8D5BA]/10 text-center text-[11px] mb-3 leading-tight">
+      <strong>Incluye</strong><br>
+      Letycachito + chilaquiles o taquitos + jugo
+    </div>
+
+    <!-- Notas -->
+    <div class="space-y-2 mb-4 text-[11px]">
+
+      <div class="w-full bg-white border border-[#F8C8DC] px-2 py-2 rounded-lg text-center">
+        Pedido mínimo 24 hrs antes
+      </div>
+
+      <div class="w-full bg-white border border-[#A8D5BA] px-2 py-2 rounded-lg text-center">
+        Entregas de 9:00 a 12:00 (sin hora exacta)
+      </div>
+
+      <div class="w-full bg-white border border-[#D4AF37] px-2 py-2 rounded-lg text-center">
+        Caja negra, rosa o natural con texto personalizado
+      </div>
+
+    </div>
+
+    <!-- Precio -->
+    <div class="flex items-center justify-between mt-auto pt-2">
+      <span class="text-2xl font-bold text-[#D4AF37]">$700</span>
+
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Product 18 - Desayuno Premium -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
+
+  <!-- Imagen -->
+  <div class="relative overflow-hidden">
+    <img src="img/desayuno2.png"
+         alt="Desayuno Premium"
+         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#F8C8DC] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full">
+        Premium
+      </span>
+    </div>
+  </div>
+
+  <!-- Contenido -->
+  <div class="p-6 flex flex-col flex-grow">
+
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">
+      Desayuno Premium
+    </h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Una opción más completa para hacer la mañana todavía más especial.
+    </p>
+
+    <!-- Incluye -->
+    <div class="p-3 rounded-lg border border-[#F8C8DC] bg-[#F8C8DC]/10 text-center text-[11px] mb-3 leading-tight">
+      <strong>Incluye</strong><br>
+      Letycachito + desayuno + jugo + fruta + snack
+    </div>
+
+    <!-- Notas -->
+    <div class="space-y-2 mb-4 text-[11px]">
+
+      <div class="w-full bg-white border border-[#F8C8DC] px-2 py-2 rounded-lg text-center">
+        Pedido mínimo 24 hrs antes
+      </div>
+
+      <div class="w-full bg-white border border-[#A8D5BA] px-2 py-2 rounded-lg text-center">
+        Entregas de 9:00 a 12:00 (sin hora exacta)
+      </div>
+
+      <div class="w-full bg-white border border-[#D4AF37] px-2 py-2 rounded-lg text-center">
+        Caja negra, rosa o natural con texto personalizado
+      </div>
+
+    </div>
+
+    <!-- Precio -->
+    <div class="flex items-center justify-between mt-auto pt-2">
+      <span class="text-2xl font-bold text-[#D4AF37]">$800</span>
+
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+  <!-- CTA FINAL -->
+<div class="col-span-1 sm:col-span-2 lg:col-span-3 xl:col-span-4 text-center mt-16 relative z-30">
+
+  <p class="text-[#6B6B6B] mb-6 text-base font-medium">
+    ¿No encontraste lo que buscabas?
+  </p>
+
+  <a href="contacto.html#contacto-form"
+    class="inline-flex items-center justify-center gap-3 
+    bg-gradient-to-r from-[#F8C8DC] via-[#F5B5CD] to-[#A8D5BA] 
+    text-[#2C2C2C] px-8 py-4 rounded-full text-lg font-bold 
+    shadow-xl hover:shadow-2xl hover:scale-105 
+    transition-all duration-300 ring-2 ring-[#F8C8DC]/30 relative z-40">
+
+    <i class="fab fa-whatsapp text-2xl"></i>
+    ¡Crea tu Arreglo Personalizado!
+  </a>
+
+</div>
+
+
+
+</div>
+</section>
+<script src="script.js" defer></script>
+</body>
+</html>

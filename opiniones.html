@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Florería Lilians</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- FAVICON PRO -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icono.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icono.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icono.png">
+  <link rel="shortcut icon" href="img/icono.png">
+
+
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+<header id="global-header" class="code-section">
+  <nav class="bg-[#FEF7FA] backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-[#F5E0E9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 lg:h-20">
+
+        <a href="index.html" class="flex items-center">
+          <img src="https://assets.ls-assets.com/uploads/3d736927-68b0-4671-b1f8-a9d3042dabe2/6b09969b-5565-42d5-8eed-a28f91ef01d9.png?w=768"
+            alt="Florería Lilians" class="h-10 lg:h-12 w-auto">
+        </a>
+
+        <!-- DESKTOP MENU -->
+        <div class="hidden lg:flex items-center space-x-8">
+
+          <a href="catalogo.html"
+            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+            Catálogo
+          </a>
+
+          <a href="entregas.html"
+            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+            Entregas
+          </a>
+
+          <a href="opiniones.html"
+            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+            Opiniones
+          </a>
+
+          <a href="sobre-nosotros.html"
+            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+            Sobre Nosotros
+          </a>
+
+          <a href="contacto.html"
+            class="bg-[#A8D5BA] text-[#2C2C2C] px-6 py-2.5 rounded-full font-semibold hover:bg-[#95C9A8] hover:text-[#1A1A1A] transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+            <i class="fab fa-whatsapp mr-2"></i>Ordena por WhatsApp
+          </a>
+
+        </div>
+
+        <!-- MOBILE BUTTON -->
+        <button data-landingsite-mobile-menu-toggle=""
+          class="lg:hidden p-2 rounded-lg hover:bg-[#FFE5F0] transition-colors duration-300"
+          aria-label="Abrir menú">
+          <svg class="w-6 h-6 text-[#2C2C2C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div data-landingsite-mobile-menu=""
+      class="hidden lg:hidden bg-[#FEF7FA] border-t border-[#F5E0E9]">
+
+      <div class="px-4 py-4 space-y-3">
+
+        <a href="catalogo.html"
+          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
+          Catálogo
+        </a>
+
+        <a href="entregas.html"
+          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
+          Entregas
+        </a>
+
+        <a href="opiniones.html"
+          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
+          Opiniones
+        </a>
+
+        <a href="sobre-nosotros.html"
+          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
+          Sobre Nosotros
+        </a>
+
+        <a href="contacto.html"
+          class="block bg-[#A8D5BA] text-[#2C2C2C] px-6 py-3 rounded-full font-semibold text-center mt-4 hover:bg-[#95C9A8] transition-all">
+          <i class="fab fa-whatsapp mr-2"></i>Ordena por WhatsApp
+        </a>
+
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+
+<section id="reviews-hero" class="code-section relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-[#F8C8DC] to-[#A8D5BA]"></div>
+  <div class="absolute top-20 right-20 w-80 h-80 bg-white/20 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-20 left-20 w-60 h-60 bg-[#D4AF37]/20 rounded-full blur-3xl"></div>
+  
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 text-center">
+    <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm text-[#2C2C2C] px-4 py-2 rounded-full text-sm font-semibold mb-6">
+      <i class="fas fa-star text-[#D4AF37]"></i>
+      <span>+200 Reseñas Verificadas</span>
+    </div>
+    
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C2C2C] mb-6">
+      Lo Que Dicen<br>
+      <span class="text-white">Nuestros Clientes</span>
+    </h1>
+    
+    <p class="text-xl text-[#2C2C2C]/80 mb-8 max-w-2xl mx-auto">
+      La satisfacción de nuestros clientes es nuestra mayor recompensa. 
+      Conoce sus experiencias con nosotros.
+    </p>
+    
+    <!-- Rating Badge -->
+    <div class="inline-flex items-center gap-4 bg-white rounded-full px-8 py-4 shadow-xl">
+      <div class="text-5xl font-bold text-[#D4AF37]">4.8</div>
+      <div class="text-left">
+        <div class="flex text-[#D4AF37] text-xl">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <div class="text-[#6B6B6B] text-sm">Calificación promedio</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews-grid" class="code-section bg-[#FEF7FA] py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      
+      <!-- Review 1 -->
+      <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center gap-1 text-[#D4AF37] mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-[#6B6B6B] mb-6 italic">
+          "¡Las flores eran espectaculares! Llegaron justo a tiempo para el cumpleaños de mi mamá. 
+          Ella quedó encantada con el arreglo. Definitivamente volveré a comprar."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-[#F8C8DC] rounded-full flex items-center justify-center">
+            <span class="text-[#2C2C2C] font-bold">MG</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-[#2C2C2C]">María García</h4>
+            <p class="text-sm text-[#6B6B6B]">Cumpleaños de mamá</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center gap-1 text-[#D4AF37] mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-[#6B6B6B] mb-6 italic">
+          "Encargué un ramo romántico para mi esposa en nuestro aniversario y superó todas las expectativas. 
+          El servicio es excelente y la entrega fue puntuales."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-[#A8D5BA] rounded-full flex items-center justify-center">
+            <span class="text-[#2C2C2C] font-bold">CR</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-[#2C2C2C]">Carlos Rodríguez</h4>
+            <p class="text-sm text-[#6B6B6B]">Aniversario</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center gap-1 text-[#D4AF37] mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-[#6B6B6B] mb-6 italic">
+          "La pedida de matrimonio fue perfecta gracias a Florería Lilians. 
+          El arreglo era exactamente como lo imaginé. ¡Gracias por hacer ese día aún más especial!"
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center">
+            <span class="text-white font-bold">LS</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-[#2C2C2C]">Laura Sánchez</h4>
+            <p class="text-sm text-[#6B6B6B]">Pedida de matrimonio</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center gap-1 text-[#D4AF37] mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-[#6B6B6B] mb-6 italic">
+          "Siempre confiable para mis pedidos de oficina. Las flores llegan frescas y hermosas. 
+          El WhatsApp hace todo muy fácil y rápido."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-[#F8C8DC] rounded-full flex items-center justify-center">
+            <span class="text-[#2C2C2C] font-bold">JP</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-[#2C2C2C]">Juan Pérez</h4>
+            <p class="text-sm text-[#6B6B6B]">Decoración de oficina</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 5 -->
+      <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center gap-1 text-[#D4AF37] mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+        </div>
+        <p class="text-[#6B6B6B] mb-6 italic">
+          "Buen servicio y flores de calidad. El arreglo que pedí para mi novia fue muy bonito. 
+          La única sugerencia sería más opciones de personalización."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-[#A8D5BA] rounded-full flex items-center justify-center">
+            <span class="text-[#2C2C2C] font-bold">AH</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-[#2C2C2C]">Ana Hernández</h4>
+            <p class="text-sm text-[#6B6B6B]">San Valentín</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 6 -->
+      <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center gap-1 text-[#D4AF37] mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-[#6B6B6B] mb-6 italic">
+          "¡Increíble servicio! Necesitaba flores urgentemente y me pudieron entregar en menos de 3 horas. 
+          Las flores estaban hermosas. 100% recomendado."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center">
+            <span class="text-white font-bold">RM</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-[#2C2C2C]">Roberto Martínez</h4>
+            <p class="text-sm text-[#6B6B6B]">Entrega urgente</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="reviews-cta" class="code-section relative overflow-hidden">
+  <div class="absolute inset-0 bg-[#2C2C2C]"></div>
+  <div class="absolute inset-0 opacity-10" style="background-image: url('https://assets.ls-assets.com/provider/istock/2209203572.jpg?w=1920'); background-size: cover;"></div>
+  
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
+    <div class="w-20 h-20 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-8">
+      <i class="fas fa-heart text-white text-3xl"></i>
+    </div>
+    
+    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+      ¿Ya Probaste Nuestros Servicios?
+    </h2>
+    <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+      Nos encantaría conocer tu experiencia. 
+      Comparte tu opinión y ayuda a otras personas a descubrirnos.
+    </p>
+    
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="contacto.html" class="inline-flex items-center justify-center gap-3 bg-[#A8D5BA] text-[#2C2C2C] px-8 py-4 rounded-full text-lg font-bold hover:bg-[#95C9A8] transition-all duration-300 shadow-xl">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        Comparte tu Experiencia
+      </a>
+      <a href="catalogo.html" class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-[#2C2C2C] transition-all duration-300">
+        Ver Catálogo <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script src="script.js" defer></script>

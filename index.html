@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Florería Lilians</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- FAVICON PRO -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icono.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icono.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icono.png">
+  <link rel="shortcut icon" href="img/icono.png">
+
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header id="global-header" class="code-section">
+  <nav class="bg-[#FEF7FA] backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-[#F5E0E9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 lg:h-20">
+
+        <a href="index.html" class="flex items-center">
+          <img src="https://assets.ls-assets.com/uploads/3d736927-68b0-4671-b1f8-a9d3042dabe2/6b09969b-5565-42d5-8eed-a28f91ef01d9.png?w=768"
+            alt="Florería Lilians" class="h-10 lg:h-12 w-auto">
+        </a>
+
+        <!-- DESKTOP MENU -->
+        <div class="hidden lg:flex items-center space-x-8">
+
+          <a href="catalogo.html"
+            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+            Catálogo
+          </a>
+
+          <a href="entregas.html"
+            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+            Entregas
+          </a>
+
+          <a href="opiniones.html"
+            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+            Opiniones
+          </a>
+
+          <a href="sobre-nosotros.html"
+            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+            Sobre Nosotros
+          </a>
+
+          <a href="contacto.html"
+            class="bg-[#A8D5BA] text-[#2C2C2C] px-6 py-2.5 rounded-full font-semibold hover:bg-[#95C9A8] hover:text-[#1A1A1A] transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+            <i class="fab fa-whatsapp mr-2"></i>Ordena por WhatsApp
+          </a>
+
+        </div>
+
+        <!-- MOBILE BUTTON -->
+        <button data-landingsite-mobile-menu-toggle=""
+          class="lg:hidden p-2 rounded-lg hover:bg-[#FFE5F0] transition-colors duration-300"
+          aria-label="Abrir menú">
+          <svg class="w-6 h-6 text-[#2C2C2C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div data-landingsite-mobile-menu=""
+      class="hidden lg:hidden bg-[#FEF7FA] border-t border-[#F5E0E9]">
+
+      <div class="px-4 py-4 space-y-3">
+
+        <a href="catalogo.html"
+          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
+          Catálogo
+        </a>
+
+        <a href="entregas.html"
+          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
+          Entregas
+        </a>
+
+        <a href="opiniones.html"
+          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
+          Opiniones
+        </a>
+
+        <a href="sobre-nosotros.html"
+          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
+          Sobre Nosotros
+        </a>
+
+        <a href="contacto.html"
+          class="block bg-[#A8D5BA] text-[#2C2C2C] px-6 py-3 rounded-full font-semibold text-center mt-4 hover:bg-[#95C9A8] transition-all">
+          <i class="fab fa-whatsapp mr-2"></i>Ordena por WhatsApp
+        </a>
+
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+<section id="hero-section" class="code-section relative overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://assets.ls-assets.com/provider/istock/2218076359.jpg?w=1920" alt="Bouquet de flores primaverales" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+  </div>
+  <div class="absolute top-20 right-10 w-32 h-32 bg-[#D4AF37]/20 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-20 left-10 w-40 h-40 bg-[#F8C8DC]/30 rounded-full blur-3xl"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+    <div class="max-w-2xl">
+      <div class="inline-flex items-center gap-2 bg-[#A8D5BA] text-[#2C2C2C] px-4 py-2 rounded-full text-sm font-semibold mb-6 animate-bounce" style="animation-duration: 3s;">
+        <i class="fas fa-truck"></i>
+        <span>Entrega el mismo día</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+        Arreglos Florales<br>
+        <span class="text-[#F8C8DC]">con Amor y Entrega Inmediata</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-gray-200 mb-8 leading-relaxed">
+        Sorprende a alguien especial con ramos frescos y elegantes.
+        <span class="text-[#D4AF37] font-semibold">Pedidos antes de las 2pm = Entrega hoy.</span>
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 mb-12">
+        <a href="contacto.html" class="inline-flex items-center justify-center bg-[#A8D5BA] text-[#2C2C2C] px-8 py-4 rounded-full text-lg font-bold hover:bg-[#95C9A8] hover:text-[#1A1A1A] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+          <i class="fab fa-whatsapp text-2xl mr-3"></i>Ordena por WhatsApp
+        </a>
+        <a href="catalogo.html" class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-[#2C2C2C] transition-all duration-300">
+          Ver Catálogo <i class="fas fa-arrow-right ml-3"></i>
+        </a>
+      </div>
+      <div class="flex flex-wrap gap-6 items-center">
+        <div class="flex items-center gap-2">
+          <div class="flex text-[#D4AF37]">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <span class="text-white font-medium">4.8 estrellas</span>
+        </div>
+        <div class="w-px h-6 bg-white/30"></div>
+        <span class="text-white font-medium"><i class="fas fa-check-circle text-[#A8D5BA] mr-2"></i>+500 entregas felices</span>
+        <div class="w-px h-6 bg-white/30"></div>
+        <span class="text-white font-medium"><i class="fas fa-heart text-[#F8C8DC] mr-2"></i>Flores frescas diarias</span>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <i class="fas fa-chevron-down text-white text-2xl opacity-70"></i>
+  </div>
+</section>
+
+<section id="featured-products" class="code-section bg-[#FEF7FA] py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <span class="inline-block text-[#D4AF37] font-semibold text-sm tracking-wider uppercase mb-3">Los Más Populares</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2C2C2C] mb-4">Arreglos que Enamoran</h2>
+      <p class="text-[#6B6B6B] text-lg max-w-2xl mx-auto">Cada ramo es una obra de arte creada con flores frescas y mucho cariño</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+      <!-- Product 1 -->
+      <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+        <div class="relative overflow-hidden">
+          <img src=img\ramo_rosas.jpg
+          alt="Ramo de rosas"
+          class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute top-4 left-4 flex flex-col gap-2">
+            <span class="bg-[#D4AF37] text-white text-xs font-bold px-3 py-1 rounded-full">Más Vendido</span>
+            <span class="bg-[#A8D5BA] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1"><i class="fas fa-truck text-xs"></i> Entrega Hoy</span>
+          </div>
+        </div>
+        <div class="p-6">
+  <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Ramos de rosas</h3>
+
+  <p class="text-[#6B6B6B] text-sm mb-4">
+    Ramos elegantes de rosas frescas en envoltura premium.
+  </p>
+
+<!-- Opciones (2 columnas compactas SIN crecer hacia abajo) -->
+<div class="grid grid-cols-2 gap-2 mb-4 text-[11px]">
+
+  <div class="bg-[#F8C8DC]/20 border border-[#F8C8DC] px-2 py-1 rounded-full flex items-center justify-center whitespace-nowrap overflow-hidden text-ellipsis">
+    24 Rosas (1 color)
+  </div>
+
+  <div class="bg-[#A8D5BA]/20 border border-[#A8D5BA] px-2 py-1 rounded-full flex items-center justify-center whitespace-nowrap overflow-hidden text-ellipsis">
+    48 Rosas (2 colores)
+  </div>
+
+  <div class="bg-[#D4AF37]/20 border border-[#D4AF37] px-2 py-1 rounded-full flex items-center justify-center whitespace-nowrap overflow-hidden text-ellipsis">
+    72 Rosas (3 colores)
+  </div>
+
+  <div class="bg-[#F5B5CD]/20 border border-[#F5B5CD] px-2 py-1 rounded-full flex items-center justify-center whitespace-nowrap overflow-hidden text-ellipsis">
+    100 Rosas (4 colores)
+  </div>
+
+</div>
+
+
+
+<!-- Nota compacta tipo badge -->
+<div class="mb-4 flex justify-center">
+  <div class="text-[11px] text-[#6B6B6B] bg-[#FEF7FA] border border-[#F8C8DC] px-3 py-1 rounded-full whitespace-nowrap">
+    Extras se cobran por separado
+  </div>
+</div>
+
+
+  <!-- Precio + botón -->
+  <div class="flex items-center justify-between">
+    <span class="text-2xl font-bold text-[#D4AF37]">$400 - $1,400</span>
+    <a href="contacto.html" class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+      <i class="fab fa-whatsapp text-lg"></i>
+    </a>
+  </div>
+</div>
+
+</div>
+
+
+<!-- Product 2 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\tulipanes.jpg" alt="Tulipanes" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+    
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#A8D5BA] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
+        <i class="fas fa-clock text-xs"></i> Bajo pedido
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Tulipanes</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-4">
+      10 tulipanes, un solo color a elección
+    </p>
+
+    <!-- Colores disponibles (FULL WIDTH) -->
+    <div class="grid grid-cols-2 gap-2 mb-4 text-[11px]">
+
+      <div class="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-full bg-[#F8C8DC]/20 border border-[#F8C8DC]">
+        <span class="w-2 h-2 rounded-full bg-pink-300"></span>
+        <span>Rosa</span>
+      </div>
+
+      <div class="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-full bg-[#F5B5CD]/20 border border-[#F5B5CD]">
+        <span class="w-2 h-2 rounded-full bg-pink-500"></span>
+        <span>Fucsia</span>
+      </div>
+
+      <div class="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]">
+        <span class="w-2 h-2 rounded-full bg-red-500"></span>
+        <span>Rojo</span>
+      </div>
+
+      <div class="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-full bg-gray-100 border border-gray-300">
+        <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+        <span>Blanco</span>
+      </div>
+
+    </div>
+
+    <!-- Nota (FULL WIDTH) -->
+    <div class="mb-4">
+      <div class="w-full text-[11px] text-[#6B6B6B] bg-white border border-[#F8C8DC] px-3 py-2 rounded-lg text-center shadow-sm">
+        Pedido con 3 días de anticipación
+      </div>
+    </div>
+
+    <!-- Precio -->
+    <div class="flex items-center justify-between">
+      <span class="text-2xl font-bold text-[#D4AF37]">$850</span>
+      
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+      <!-- Product 3 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\girasoles.jpg" 
+     alt="Ramos de girasoles" 
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">    
+    <div class="absolute top-4 left-4 flex flex-col gap-2">
+      <span class="bg-[#A8D5BA] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
+        <i class="fas fa-truck text-xs"></i> Entrega Hoy
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Ramos de girasoles</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-3">
+      Combinaciones disponibles con girasoles frescos
+    </p>
+
+    <!-- Opciones -->
+    <div class="grid grid-cols-2 gap-2 mb-3 text-[11px]">
+
+      <div class="flex items-center justify-center px-3 py-1 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37] text-center leading-tight">
+        Girasoles con dollar
+      </div>
+
+      <div class="flex items-center justify-center px-3 py-1 rounded-full bg-[#A8D5BA]/10 border border-[#A8D5BA] text-center leading-tight">
+        Girasoles con<br>clavelinas
+      </div>
+
+      <!-- Centrado abajo -->
+      <div class="col-span-2 flex justify-center">
+        <div class="px-3 py-1 rounded-full bg-[#F8C8DC]/20 border border-[#F8C8DC] text-center leading-tight">
+          Girasoles con 24 rosas
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- Nota -->
+    <div class="mb-3 flex justify-center">
+      <div class="text-[11px] text-[#6B6B6B] bg-[#FEF7FA] border border-[#F8C8DC] px-3 py-1 rounded-full">
+        Cada arreglo incluye 7 girasoles
+      </div>
+    </div>
+
+    <!-- Precio + botón -->
+  <div class="flex items-center justify-between">
+    <span class="text-2xl font-bold text-[#D4AF37]">$480 - $820</span>
+    <a href="contacto.html" class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+      <i class="fab fa-whatsapp text-lg"></i>
+    </a>
+  </div>
+
+  </div>
+
+</div>
+
+<!-- Product 4 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+  
+  <div class="relative overflow-hidden">
+    <img src="img\maxi_ramos.jpg"
+     alt="Maxi ramos"
+     class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+
+    <div class="absolute top-4 left-4">
+      <span class="bg-[#F8C8DC] text-[#2C2C2C] text-xs font-bold px-3 py-1 rounded-full">
+        Novedad
+      </span>
+    </div>
+  </div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-[#2C2C2C] mb-2">Maxi ramos</h3>
+
+    <p class="text-[#6B6B6B] text-sm mb-4">
+      Ramos de gran tamaño con combinaciones de colores
+    </p>
+
+    <!-- Opciones -->
+    <div class="grid grid-cols-2 gap-2 mb-4 text-[11px]">
+
+      <div class="w-full flex items-center justify-center px-3 py-2 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37] text-center leading-tight">
+        200 rosas<br>hasta 5 colores
+      </div>
+
+      <div class="w-full flex items-center justify-center px-3 py-2 rounded-full bg-[#A8D5BA]/10 border border-[#A8D5BA] text-center leading-tight">
+        300 rosas<br>hasta 5 colores
+      </div>
+
+    </div>
+
+    <!-- Nota (FULL WIDTH) -->
+    <div class="mb-4">
+      <div class="w-full text-[11px] text-[#6B6B6B] bg-white border border-[#F8C8DC] px-3 py-2 rounded-lg text-center shadow-sm">
+        Extras se cobran por separado
+      </div>
+    </div>
+
+    <!-- Precio + botón -->
+    <div class="flex items-center justify-between">
+      <span class="text-2xl font-bold text-[#D4AF37]">$2,800 - $4,100</span>
+
+      <a href="contacto.html"
+         class="bg-[#F8C8DC] text-[#2C2C2C] p-3 rounded-full hover:bg-[#F5B5CD] transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+</section>
+
+<section id="categories-section" class="code-section bg-[#FDF0F5] py-16 lg:py-24 relative overflow-hidden">
+  <div class="absolute top-0 left-0 w-full h-full opacity-30">
+    <div class="absolute top-10 left-10 w-64 h-64 bg-[#F8C8DC] rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-[#A8D5BA] rounded-full blur-3xl"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <span class="inline-block text-[#D4AF37] font-semibold text-sm tracking-wider uppercase mb-3">Para Cada Ocasión</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2C2C2C] mb-4">Encuentra el Arreglo Perfecto</h2>
+      <p class="text-[#6B6B6B] text-lg max-w-2xl mx-auto">Cada momento merece flores especiales.</p>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+      <a href="catalogo.html" class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 aspect-square">
+        <img src="https://assets.ls-assets.com/provider/istock/2209203572.jpg?w=768" alt="Amor" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 lg:p-6">
+          <div class="bg-[#F8C8DC] w-12 h-12 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"><i class="fas fa-heart text-[#2C2C2C] text-xl"></i></div>
+          <h3 class="text-white text-xl lg:text-2xl font-bold mb-1">Amor</h3>
+          <p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Rosas y romances</p>
+        </div>
+      </a>
+      <a href="catalogo.html" class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 aspect-square">
+        <img src="https://assets.ls-assets.com/provider/istock/2252088518.jpg?w=768" alt="Cumpleaños" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 lg:p-6">
+          <div class="bg-[#D4AF37] w-12 h-12 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"><i class="fas fa-birthday-cake text-white text-xl"></i></div>
+          <h3 class="text-white text-xl lg:text-2xl font-bold mb-1">Cumpleaños</h3>
+          <p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Celebraciones alegres</p>
+        </div>
+      </a>
+      <a href="catalogo.html" class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 aspect-square">
+        <img src="https://assets.ls-assets.com/provider/istock/2198093170.jpg?w=768" alt="Aniversarios" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 lg:p-6">
+          <div class="bg-[#A8D5BA] w-12 h-12 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"><i class="fas fa-ring text-[#2C2C2C] text-xl"></i></div>
+          <h3 class="text-white text-xl lg:text-2xl font-bold mb-1">Aniversarios</h3>
+          <p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Momentos inolvidables</p>
+        </div>
+      </a>
+      <a href="catalogo.html" class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 aspect-square">
+        <img src="https://assets.ls-assets.com/provider/istock/2218076359.jpg?w=768" alt="Pedidas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 lg:p-6">
+          <div class="bg-[#D4AF37] w-12 h-12 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"><i class="fas fa-gem text-white text-xl"></i></div>
+          <h3 class="text-white text-xl lg:text-2xl font-bold mb-1">Pedidas</h3>
+          <p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity">El momento perfecto</p>
+        </div>
+      </a>
+    </div>
+    <div class="text-center mt-10">
+      <a href="catalogo.html" class="inline-flex items-center gap-2 text-[#2C2C2C] font-semibold hover:text-[#D4AF37] transition-colors">Ver Todas las Categorías <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<section id="urgency-section" class="code-section relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-r from-[#2C2C2C] via-[#3D3D3D] to-[#2C2C2C]"></div>
+  <div class="absolute inset-0 opacity-20" style="background-image: url('https://assets.ls-assets.com/provider/istock/2247357789.jpg?w=1920'); background-size: cover; background-position: center;"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- TEXTO -->
+      <div>
+        <div class="inline-flex items-center gap-2 bg-[#A8D5BA] text-[#2C2C2C] px-4 py-2 rounded-full text-sm font-bold mb-6">
+          <i class="fas fa-bolt"></i><span>Entrega Express</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+          ¡Pide Hoy,<br><span class="text-[#F8C8DC]">Recibe Hoy!</span>
+        </h2>
+
+        <p class="text-gray-300 text-lg mb-8">
+          Hacemos tu pedido realidad en horas. Si tu pedido llega antes de las 
+          <strong class="text-[#D4AF37]">2:00 PM</strong>, entregamos el mismo día.
+        </p>
+
+        <a href="contacto.html" class="inline-flex items-center gap-3 bg-[#A8D5BA] text-[#2C2C2C] px-8 py-4 rounded-full text-lg font-bold hover:bg-[#95C9A8] hover:text-[#1A1A1A] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+          <i class="fab fa-whatsapp text-2xl"></i>¡Haz Tu Pedido Ya!
+        </a>
+      </div>
+
+      <!-- CONTADOR -->
+      <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 lg:p-10 border border-white/20">
+        <div class="text-center">
+
+          <!-- 🔥 TEXTO DINÁMICO -->
+          <p id="cutoff-text" class="text-[#F8C8DC] font-semibold text-lg mb-4">
+            Corte para entrega hoy
+          </p>
+
+          <!-- CONTADOR -->
+          <div class="flex justify-center gap-4 mb-6">
+            <div class="bg-[#2C2C2C] rounded-2xl p-4 min-w-[80px]">
+              <div id="hours" class="text-4xl lg:text-5xl font-bold text-[#D4AF37]">00</div>
+              <div class="text-gray-400 text-sm mt-1">Horas</div>
+            </div>
+
+            <div class="flex items-center text-[#D4AF37] text-3xl font-bold pt-4">:</div>
+
+            <div class="bg-[#2C2C2C] rounded-2xl p-4 min-w-[80px]">
+              <div id="minutes" class="text-4xl lg:text-5xl font-bold text-[#D4AF37]">00</div>
+              <div class="text-gray-400 text-sm mt-1">Min</div>
+            </div>
+
+            <div class="flex items-center text-[#D4AF37] text-3xl font-bold pt-4">:</div>
+
+            <div class="bg-[#2C2C2C] rounded-2xl p-4 min-w-[80px]">
+              <div id="seconds" class="text-4xl lg:text-5xl font-bold text-[#D4AF37]">00</div>
+              <div class="text-gray-400 text-sm mt-1">Seg</div>
+            </div>
+          </div>
+
+          <!-- 🔥 TEXTO DINÁMICO -->
+          <p id="delivery-text" class="text-gray-300 text-sm">
+            <i class="fas fa-truck text-[#A8D5BA] mr-2"></i>
+            Entrega estimada: HOY antes de las 6:00 PM
+          </p>
+
+          <div class="flex flex-wrap justify-center gap-4 mt-8 pt-6 border-t border-white/10">
+            <div class="flex items-center gap-2 text-white text-sm">
+              <i class="fas fa-check-circle text-[#A8D5BA]"></i><span>Flores Frescas</span>
+            </div>
+            <div class="flex items-center gap-2 text-white text-sm">
+              <i class="fas fa-check-circle text-[#A8D5BA]"></i><span>Envío Discreto</span>
+            </div>
+            <div class="flex items-center gap-2 text-white text-sm">
+              <i class="fas fa-check-circle text-[#A8D5BA]"></i><span>Garantía de Calidad</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="why-us-section" class="code-section bg-[#FEF7FA] py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <span class="inline-block text-[#D4AF37] font-semibold text-sm tracking-wider uppercase mb-3">Nuestra Promesa</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2C2C2C] mb-4">¿Por Qué Elegir Florería Lilians?</h2>
+      <p class="text-[#6B6B6B] text-lg max-w-2xl mx-auto">Más que flores, entregamos emociones.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-[#F8C8DC] to-[#FFE5F0] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-truck text-3xl text-[#D4AF37]"></i></div>
+        <h3 class="text-xl font-bold text-[#2C2C2C] mb-3">Entrega el Mismo Día</h3>
+        <p class="text-[#6B6B6B]">Pedidos antes de las 2PM llegan hoy mismo.</p>
+      </div>
+      <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-[#A8D5BA] to-[#E8F5EC] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-seedling text-3xl text-[#2C2C2C]"></i></div>
+        <h3 class="text-xl font-bold text-[#2C2C2C] mb-3">Flores 100% Frescas</h3>
+        <p class="text-[#6B6B6B]">Seleccionamos las mejores flores diariamente.</p>
+      </div>
+      <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-[#D4AF37] to-[#F5E0B8] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-magic text-3xl text-white"></i></div>
+        <h3 class="text-xl font-bold text-[#2C2C2C] mb-3">Arreglos Personalizados</h3>
+        <p class="text-[#6B6B6B]">Creamos el ramo perfecto según tu gusto.</p>
+      </div>
+      <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-[#F8C8DC] to-[#A8D5BA] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-heart text-3xl text-[#D4AF37]"></i></div>
+        <h3 class="text-xl font-bold text-[#2C2C2C] mb-3">Hechos con Amor</h3>
+        <p class="text-[#6B6B6B]">Cada arreglo es una obra de arte artesanal.</p>
+      </div>
+      <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-[#A8D5BA] to-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-star text-3xl text-white"></i></div>
+        <h3 class="text-xl font-bold text-[#2C2C2C] mb-3">4.8 Estrellas</h3>
+        <p class="text-[#6B6B6B]">Clientes felices nos califican excelente.</p>
+      </div>
+      <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-[#D4AF37] to-[#F8C8DC] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"><i class="fas fa-comments text-3xl text-white"></i></div>
+        <h3 class="text-xl font-bold text-[#2C2C2C] mb-3">Atención Personal</h3>
+        <p class="text-[#6B6B6B]">WhatsApp directo para tus dudas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta-section" class="code-section relative overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://assets.ls-assets.com/provider/istock/1473710691.jpg?w=1920" alt="Florista" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80"></div>
+  </div>
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+    <div class="absolute top-10 right-20 w-40 h-40 bg-[#F8C8DC]/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 left-20 w-60 h-60 bg-[#A8D5BA]/20 rounded-full blur-3xl"></div>
+  </div>
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+    <div class="text-center">
+      <div class="inline-flex items-center justify-center w-20 h-20 bg-[#D4AF37] rounded-full mb-8 animate-pulse"><i class="fas fa-heart text-white text-3xl"></i></div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">Sorprende a Alguien<br><span class="text-[#F8C8DC]">Especial Hoy</span></h2>
+      <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">Las flores tienen el poder de convertir un día ordinario en un recuerdo extraordinario.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contacto.html" class="inline-flex items-center justify-center bg-[#A8D5BA] text-[#2C2C2C] px-10 py-5 rounded-full text-xl font-bold hover:bg-[#95C9A8] hover:text-[#1A1A1A] transition-all duration-300 shadow-2xl hover:shadow-[#A8D5BA]/50 transform hover:-translate-y-1"><i class="fab fa-whatsapp text-2xl mr-3"></i>Ordena Ahora</a>
+        <a href="catalogo.html" class="inline-flex items-center justify-center border-2 border-white text-white px-10 py-5 rounded-full text-xl font-semibold hover:bg-white hover:text-[#2C2C2C] transition-all duration-300">Ver Arreglos <i class="fas fa-arrow-right ml-3"></i></a>
+      </div>
+      <div class="mt-10 flex flex-wrap justify-center gap-6 text-white/80 text-sm">
+        <span><i class="fas fa-truck text-[#A8D5BA] mr-2"></i>Entrega el mismo día</span>
+        <span><i class="fas fa-check-circle text-[#A8D5BA] mr-2"></i>Flores frescas</span>
+        <span><i class="fas fa-star text-[#D4AF37] mr-2"></i>4.8 estrellas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="global-footer" class="code-section bg-[#2C2C2C] text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+      <div class="lg:col-span-1">
+        <a href="/" class="inline-block mb-6" data-logo=""><img src="https://assets.ls-assets.com/uploads/3d736927-68b0-4671-b1f8-a9d3042dabe2/6b09969b-5565-42d5-8eed-a28f91ef01d9.png?w=768" alt="Florería Lilians" class="h-14 w-auto brightness-0 invert"></a>
+        <p class="text-gray-400 mb-6">Arreglos florales frescos y elegantes, creados con amor.</p>
+        <div class="flex gap-4">
+          <a href="contacto.html" class="w-10 h-10 bg-[#A8D5BA] rounded-full flex items-center justify-center text-[#2C2C2C] hover:bg-[#95C9A8] transition-colors"><i class="fab fa-whatsapp text-lg"></i></a>
+          <a href="https://www.instagram.com/f.lilians/" class="w-10 h-10 bg-[#F8C8DC] rounded-full flex items-center justify-center text-[#2C2C2C] hover:bg-[#F5B5CD] transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+          <a href="https://web.facebook.com/F.lilians/?_rdc=1&_rdr#" class="w-10 h-10 bg-[#F8C8DC] rounded-full flex items-center justify-center text-[#2C2C2C] hover:bg-[#F5B5CD] transition-colors"><i class="fab fa-facebook-f text-lg"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-6 text-[#F8C8DC]">Categorías</h4>
+        <ul class="space-y-3">
+          <li><a href="catalogo.html" class="text-gray-400 hover:text-white transition-colors">Catálogo Completo</a></li>
+          <li><a href="catalogo.html" class="text-gray-400 hover:text-white transition-colors">Arreglos de Amor</a></li>
+          <li><a href="catalogo.html" class="text-gray-400 hover:text-white transition-colors">Cumpleaños</a></li>
+          <li><a href="catalogo.html" class="text-gray-400 hover:text-white transition-colors">Aniversarios</a></li>
+          <li><a href="catalogo.html" class="text-gray-400 hover:text-white transition-colors">Pedidas</a></li>
+          <li><a href="catalogo.html" class="text-gray-400 hover:text-white transition-colors">Novias</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-6 text-[#F8C8DC]">Información</h4>
+        <ul class="space-y-3">
+          <li><a href="entregas.html" class="text-gray-400 hover:text-white transition-colors">Entregas</a></li>
+          <li><a href="opiniones.html" class="text-gray-400 hover:text-white transition-colors">Opiniones</a></li>
+          <li><a href="sobre-nosotros.html" class="text-gray-400 hover:text-white transition-colors">Sobre Nosotros</a></li>
+          <li><a href="contacto.html" class="text-gray-400 hover:text-white transition-colors">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-6 text-[#F8C8DC]">Contacto</h4>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3"><i class="fab fa-whatsapp text-[#A8D5BA] text-xl mt-1"></i><a href="contacto.html" class="text-gray-400 hover:text-white transition-colors">Escríbenos por WhatsApp</a></li>
+          <li class="flex items-start gap-3"><i class="fas fa-clock text-[#D4AF37] mt-1"></i><span class="text-gray-400">Lun - Sáb: 8AM - 7PM<br>Domingos: Cerrado</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-truck text-[#F8C8DC] mt-1"></i><span class="text-gray-400">Entregas el mismo día<br>Pedidos antes de 2PM</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-500 text-sm text-center md:text-left">© 2026 Florería Lilians. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+  <a href="contacto.html" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 hover:bg-[#20BD5A]" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp text-3xl"></i></a>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
