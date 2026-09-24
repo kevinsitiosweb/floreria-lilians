@@ -3,52 +3,95 @@
 
 <style>
   /* =========================================
-     IMÁGENES RESPONSIVE DEL CATÁLOGO
+     IMÁGENES DE PRODUCTOS
+     Fondo con la misma foto + imagen completa
      ========================================= */
 
   #catalog-products .product-image-container {
+    position: relative;
     width: 100%;
-    height: 320px;
+    height: 300px;
     overflow: hidden;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #fdf0f5;
   }
 
+  /* Imagen de fondo */
+  #catalog-products .product-image-bg {
+    position: absolute;
+    inset: -15px;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+
+    object-fit: cover;
+    object-position: center;
+
+    filter: blur(16px);
+    opacity: 0.45;
+    transform: scale(1.12);
+  }
+
+  /* Oscurece/aclara ligeramente el fondo */
+  #catalog-products .product-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    z-index: 1;
+  }
+
+  /* Imagen principal */
   #catalog-products .product-image {
+    position: relative;
+    z-index: 2;
+
     width: 100%;
     height: 100%;
+
     object-fit: contain;
     object-position: center;
+
     display: block;
+
+    padding: 6px;
+
+    transition: transform 0.4s ease;
   }
 
-  /* CELULAR PEQUEÑO */
-  @media (max-width: 480px) {
+  /* Zoom muy ligero solo en computadora */
+  @media (hover: hover) {
+    #catalog-products .group:hover .product-image {
+      transform: scale(1.025);
+    }
+  }
+
+  /* CELULAR */
+  @media (max-width: 639px) {
     #catalog-products .product-image-container {
-      height: 300px;
+      height: 320px;
+    }
+
+    #catalog-products .product-image {
+      padding: 4px;
     }
   }
 
   /* TABLET */
   @media (min-width: 640px) {
     #catalog-products .product-image-container {
-      height: 280px;
+      height: 290px;
     }
   }
 
   /* COMPUTADORA */
   @media (min-width: 1024px) {
     #catalog-products .product-image-container {
-      height: 260px;
+      height: 270px;
     }
   }
 
-  /* PANTALLAS GRANDES */
+  /* PANTALLA GRANDE */
   @media (min-width: 1280px) {
     #catalog-products .product-image-container {
-      height: 250px;
+      height: 260px;
     }
   }
 </style>
@@ -1504,36 +1547,63 @@ document.addEventListener("DOMContentLoaded", function () {
 
   productImages.forEach(function (img) {
 
-    /* Corrige rutas img\foto.jpg a img/foto.jpg */
-    const src = img.getAttribute("src");
+    /* Obtener y corregir la ruta */
+    let src = img.getAttribute("src");
 
-    if (src) {
-      img.setAttribute("src", src.replace(/\\/g, "/"));
-    }
+    if (!src) return;
 
-    /* Quitamos el recorte y zoom anteriores */
+    src = src.replace(/\\/g, "/");
+    img.setAttribute("src", src);
+
+    /* Quitar estilos anteriores */
     img.classList.remove(
       "h-64",
       "object-cover",
+      "object-contain",
       "group-hover:scale-110",
       "transition-transform",
-      "duration-700"
+      "duration-700",
+      "product-image"
     );
 
-    /* Nueva configuración responsive */
-    img.classList.add("product-image");
-
-    /* Contenedor de la fotografía */
+    /* Contenedor original */
     const container = img.parentElement;
 
-    if (container) {
-      container.classList.add("product-image-container");
+    if (!container) return;
+
+    container.classList.add("product-image-container");
+
+    /* Evitar crear el fondo dos veces */
+    if (!container.querySelector(".product-image-bg")) {
+
+      /* Crear copia de la imagen para el fondo */
+      const backgroundImage = document.createElement("img");
+
+      backgroundImage.src = src;
+      backgroundImage.alt = "";
+      backgroundImage.className = "product-image-bg";
+      backgroundImage.setAttribute("aria-hidden", "true");
+
+      /* Crear capa suave */
+      const overlay = document.createElement("div");
+      overlay.className = "product-image-overlay";
+
+      /* Insertar fondo */
+      container.insertBefore(backgroundImage, img);
+
+      /* Insertar overlay */
+      container.insertBefore(overlay, img);
     }
+
+    /* Imagen principal */
+    img.classList.add("product-image");
 
   });
 
 });
 </script>
+
+<script src="script.js" defer></script>
 
 <script src="script.js" defer></script>
 
