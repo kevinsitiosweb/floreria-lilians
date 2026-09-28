@@ -5,308 +5,746 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Florería Lilians</title>
+  <title>Opiniones | Florería Lilians</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- ICONOS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <!-- FAVICON PRO -->
+  <!-- FAVICON -->
   <link rel="icon" type="image/png" sizes="32x32" href="img/icono.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/icono.png">
   <link rel="apple-touch-icon" sizes="180x180" href="img/icono.png">
   <link rel="shortcut icon" href="img/icono.png">
-
-
 </head>
 
 <body>
 
+  <!-- ====================================================== -->
+  <!-- HEADER -->
+  <!-- ====================================================== -->
 
-<!-- HEADER -->
-<header id="global-header" class="code-section">
-  <nav class="bg-[#FEF7FA] backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-[#F5E0E9]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16 lg:h-20">
+  <header id="global-header" class="code-section">
 
-        <a href="index.html" class="flex items-center">
-          <img src="https://assets.ls-assets.com/uploads/3d736927-68b0-4671-b1f8-a9d3042dabe2/6b09969b-5565-42d5-8eed-a28f91ef01d9.png?w=768"
-            alt="Florería Lilians" class="h-10 lg:h-12 w-auto">
-        </a>
+    <nav class="bg-[#FEF7FA] backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-[#F5E0E9]">
 
-        <!-- DESKTOP MENU -->
-        <div class="hidden lg:flex items-center space-x-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <a href="catalogo.html"
-            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+        <div class="flex justify-between items-center h-16 lg:h-20">
+
+          <!-- LOGO -->
+          <a href="index.html" class="flex items-center">
+
+            <img
+              src="https://assets.ls-assets.com/uploads/3d736927-68b0-4671-b1f8-a9d3042dabe2/6b09969b-5565-42d5-8eed-a28f91ef01d9.png?w=768"
+              alt="Florería Lilians"
+              class="h-10 lg:h-12 w-auto"
+            >
+
+          </a>
+
+
+          <!-- DESKTOP MENU -->
+          <div class="hidden lg:flex items-center space-x-8">
+
+            <a
+              href="catalogo.html"
+              class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300"
+            >
+              Catálogo
+            </a>
+
+            <a
+              href="entregas.html"
+              class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300"
+            >
+              Entregas
+            </a>
+
+            <a
+              href="opiniones.html"
+              class="text-[#D4AF37] font-semibold transition-colors duration-300"
+            >
+              Opiniones
+            </a>
+
+            <a
+              href="sobre-nosotros.html"
+              class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300"
+            >
+              Sobre Nosotros
+            </a>
+
+            <a
+              href="contacto.html#pedidoForm"
+              class="bg-[#A8D5BA] text-[#2C2C2C] px-6 py-2.5 rounded-full font-semibold
+                     hover:bg-[#95C9A8] hover:text-[#1A1A1A]
+                     transition-all duration-300 shadow-md hover:shadow-lg
+                     transform hover:-translate-y-0.5"
+            >
+              <i class="fab fa-whatsapp mr-2"></i>
+              Ordena por WhatsApp
+            </a>
+
+          </div>
+
+
+          <!-- MOBILE BUTTON -->
+          <button
+            data-landingsite-mobile-menu-toggle=""
+            class="lg:hidden p-2 rounded-lg hover:bg-[#FFE5F0] transition-colors duration-300"
+            aria-label="Abrir menú"
+          >
+
+            <svg
+              class="w-6 h-6 text-[#2C2C2C]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+
+            </svg>
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- MOBILE MENU -->
+      <div
+        data-landingsite-mobile-menu=""
+        class="hidden lg:hidden bg-[#FEF7FA] border-t border-[#F5E0E9]"
+      >
+
+        <div class="px-4 py-4 space-y-3">
+
+          <a
+            href="catalogo.html"
+            class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors"
+          >
             Catálogo
           </a>
 
-          <a href="entregas.html"
-            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+          <a
+            href="entregas.html"
+            class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors"
+          >
             Entregas
           </a>
 
-          <a href="opiniones.html"
-            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+          <a
+            href="opiniones.html"
+            class="block text-[#D4AF37] font-semibold py-2"
+          >
             Opiniones
           </a>
 
-          <a href="sobre-nosotros.html"
-            class="text-[#2C2C2C] hover:text-[#D4AF37] font-medium transition-colors duration-300">
+          <a
+            href="sobre-nosotros.html"
+            class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors"
+          >
             Sobre Nosotros
           </a>
 
-          <a href="contacto.html"
-            class="bg-[#A8D5BA] text-[#2C2C2C] px-6 py-2.5 rounded-full font-semibold hover:bg-[#95C9A8] hover:text-[#1A1A1A] transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-            <i class="fab fa-whatsapp mr-2"></i>Ordena por WhatsApp
+          <a
+            href="contacto.html#pedidoForm"
+            class="block bg-[#A8D5BA] text-[#2C2C2C] px-6 py-3 rounded-full
+                   font-semibold text-center mt-4 hover:bg-[#95C9A8] transition-all"
+          >
+            <i class="fab fa-whatsapp mr-2"></i>
+            Ordena por WhatsApp
           </a>
 
         </div>
 
-        <!-- MOBILE BUTTON -->
-        <button data-landingsite-mobile-menu-toggle=""
-          class="lg:hidden p-2 rounded-lg hover:bg-[#FFE5F0] transition-colors duration-300"
-          aria-label="Abrir menú">
-          <svg class="w-6 h-6 text-[#2C2C2C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ====================================================== -->
+  <!-- HERO OPINIONES -->
+  <!-- ====================================================== -->
+
+  <section
+    id="reviews-hero"
+    class="code-section relative overflow-hidden"
+  >
+
+    <div class="absolute inset-0 bg-gradient-to-br from-[#F8C8DC] to-[#A8D5BA]"></div>
+
+    <div class="absolute top-20 right-20 w-80 h-80 bg-white/20 rounded-full blur-3xl"></div>
+
+    <div class="absolute bottom-20 left-20 w-60 h-60 bg-[#D4AF37]/20 rounded-full blur-3xl"></div>
+
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 text-center">
+
+      <!-- GOOGLE BADGE -->
+      <div
+        class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm
+               text-[#2C2C2C] px-4 py-2 rounded-full text-sm font-semibold mb-6"
+      >
+
+        <i class="fab fa-google text-[#D4AF37]"></i>
+
+        <span>317 opiniones en Google</span>
 
       </div>
-    </div>
-
-    <!-- MOBILE MENU -->
-    <div data-landingsite-mobile-menu=""
-      class="hidden lg:hidden bg-[#FEF7FA] border-t border-[#F5E0E9]">
-
-      <div class="px-4 py-4 space-y-3">
-
-        <a href="catalogo.html"
-          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
-          Catálogo
-        </a>
-
-        <a href="entregas.html"
-          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
-          Entregas
-        </a>
-
-        <a href="opiniones.html"
-          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
-          Opiniones
-        </a>
-
-        <a href="sobre-nosotros.html"
-          class="block text-[#2C2C2C] hover:text-[#D4AF37] font-medium py-2 transition-colors">
-          Sobre Nosotros
-        </a>
-
-        <a href="contacto.html"
-          class="block bg-[#A8D5BA] text-[#2C2C2C] px-6 py-3 rounded-full font-semibold text-center mt-4 hover:bg-[#95C9A8] transition-all">
-          <i class="fab fa-whatsapp mr-2"></i>Ordena por WhatsApp
-        </a>
-
-      </div>
-    </div>
-
-  </nav>
-</header>
 
 
-<section id="reviews-hero" class="code-section relative overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-br from-[#F8C8DC] to-[#A8D5BA]"></div>
-  <div class="absolute top-20 right-20 w-80 h-80 bg-white/20 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-20 left-20 w-60 h-60 bg-[#D4AF37]/20 rounded-full blur-3xl"></div>
-  
-  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 text-center">
-    <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm text-[#2C2C2C] px-4 py-2 rounded-full text-sm font-semibold mb-6">
-      <i class="fas fa-star text-[#D4AF37]"></i>
-      <span>+200 Reseñas Verificadas</span>
-    </div>
-    
-    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C2C2C] mb-6">
-      Lo Que Dicen<br>
-      <span class="text-white">Nuestros Clientes</span>
-    </h1>
-    
-    <p class="text-xl text-[#2C2C2C]/80 mb-8 max-w-2xl mx-auto">
-      La satisfacción de nuestros clientes es nuestra mayor recompensa. 
-      Conoce sus experiencias con nosotros.
-    </p>
-    
-    <!-- Rating Badge -->
-    <div class="inline-flex items-center gap-4 bg-white rounded-full px-8 py-4 shadow-xl">
-      <div class="text-5xl font-bold text-[#D4AF37]">4.8</div>
-      <div class="text-left">
-        <div class="flex text-[#D4AF37] text-xl">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C2C2C] mb-6">
+
+        Lo Que Dicen<br>
+
+        <span class="text-white">
+          Nuestros Clientes
+        </span>
+
+      </h1>
+
+
+      <p class="text-xl text-[#2C2C2C]/80 mb-8 max-w-2xl mx-auto">
+        Conoce algunas de las experiencias que nuestros clientes
+        han compartido sobre Florería Lilians.
+      </p>
+
+
+      <!-- RATING -->
+      <div
+        class="inline-flex items-center gap-4 bg-white rounded-full
+               px-6 sm:px-8 py-4 shadow-xl"
+      >
+
+        <div class="text-5xl font-bold text-[#D4AF37]">
+          4.8
         </div>
-        <div class="text-[#6B6B6B] text-sm">Calificación promedio</div>
+
+        <div class="text-left">
+
+          <div class="flex text-[#D4AF37] text-xl">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+
+          </div>
+
+          <div class="text-[#6B6B6B] text-sm">
+            Calificación en Google
+          </div>
+
+        </div>
+
       </div>
+
     </div>
+
+  </section>
+
+
+  <!-- ====================================================== -->
+  <!-- OPINIONES -->
+  <!-- ====================================================== -->
+
+  <section
+    id="reviews-grid"
+    class="code-section bg-[#FEF7FA] py-16 lg:py-24"
+  >
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+      <!-- TITULO -->
+      <div class="text-center max-w-2xl mx-auto mb-12">
+
+        <span
+          class="inline-block text-[#D4AF37] font-semibold text-sm
+                 tracking-wider uppercase mb-3"
+        >
+          EXPERIENCIAS
+        </span>
+
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2C2C2C] mb-4">
+          Lo que opinan nuestros clientes
+        </h2>
+
+        <p class="text-[#6B6B6B] text-lg">
+          Algunas experiencias compartidas por nuestros clientes en Google.
+        </p>
+
+      </div>
+
+
+      <!-- GRID DE RESEÑAS -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+        <!-- RESEÑA 1 - ROSY -->
+        <article
+          class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg
+                hover:shadow-xl hover:-translate-y-1
+                transition-all duration-300 flex flex-col"
+        >
+
+          <div class="flex items-center justify-between mb-5">
+
+            <div class="flex gap-1 text-[#D4AF37]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <i class="fab fa-google text-xl text-[#6B6B6B]"></i>
+
+          </div>
+
+          <p class="text-[#6B6B6B] italic leading-relaxed mb-7 flex-grow">
+            “Muy buen servicio, las flores estaban muy lindas y el repartidor
+            hizo un esfuerzo extra al esperar hasta que salieran por las flores,
+            la verdad lo agradezco mucho. Los contacté por internet y pagué con
+            transferencia, fue muy confiable. Los recomiendo, las flores
+            llegaron tal cual la foto de la página.”
+          </p>
+
+          <div class="flex items-center gap-4 border-t border-[#F5E0E9] pt-5">
+
+            <div
+              class="w-12 h-12 bg-[#D4AF37] rounded-full
+                    flex items-center justify-center flex-shrink-0"
+            >
+              <span class="font-bold text-white">RD</span>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-[#2C2C2C]">
+                Rosy Davila
+              </h4>
+
+              <p class="text-sm text-[#6B6B6B]">
+                Hace 2 meses · Google
+              </p>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- RESEÑA 2 - JUDITH -->
+<article
+  class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg
+         hover:shadow-xl hover:-translate-y-1
+         transition-all duration-300 flex flex-col"
+>
+
+  <div class="flex items-center justify-between mb-5">
+
+    <div class="flex gap-1 text-[#D4AF37]">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+
+    <i class="fab fa-google text-xl text-[#6B6B6B]"></i>
+
   </div>
-</section>
 
-<section id="reviews-grid" class="code-section bg-[#FEF7FA] py-16 lg:py-24">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-      
-      <!-- Review 1 -->
-      <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
-        <div class="flex items-center gap-1 text-[#D4AF37] mb-4">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </div>
-        <p class="text-[#6B6B6B] mb-6 italic">
-          "¡Las flores eran espectaculares! Llegaron justo a tiempo para el cumpleaños de mi mamá. 
-          Ella quedó encantada con el arreglo. Definitivamente volveré a comprar."
-        </p>
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-[#F8C8DC] rounded-full flex items-center justify-center">
-            <span class="text-[#2C2C2C] font-bold">MG</span>
-          </div>
-          <div>
-            <h4 class="font-bold text-[#2C2C2C]">María García</h4>
-            <p class="text-sm text-[#6B6B6B]">Cumpleaños de mamá</p>
-          </div>
-        </div>
-      </div>
+  <p class="text-[#6B6B6B] italic leading-relaxed mb-7 flex-grow">
+    “El día de hoy realicé mi primera compra, un ramo de flores
+    y un globo personalizado. Agradezco mucho que me respondieran
+    súper temprano y que me asesoraran con mi pedido. A mi esposo
+    le gustó mucho su sorpresa. El trato excelente, la calidad de
+    los productos también, y la forma y entrega también estuvo
+    súper bien. ¡Muchas gracias!”
+  </p>
 
-      <!-- Review 2 -->
-      <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
-        <div class="flex items-center gap-1 text-[#D4AF37] mb-4">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </div>
-        <p class="text-[#6B6B6B] mb-6 italic">
-          "Encargué un ramo romántico para mi esposa en nuestro aniversario y superó todas las expectativas. 
-          El servicio es excelente y la entrega fue puntuales."
-        </p>
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-[#A8D5BA] rounded-full flex items-center justify-center">
-            <span class="text-[#2C2C2C] font-bold">CR</span>
-          </div>
-          <div>
-            <h4 class="font-bold text-[#2C2C2C]">Carlos Rodríguez</h4>
-            <p class="text-sm text-[#6B6B6B]">Aniversario</p>
-          </div>
-        </div>
-      </div>
+  <div class="flex items-center gap-4 border-t border-[#F5E0E9] pt-5">
 
-      <!-- Review 3 -->
-      <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
-        <div class="flex items-center gap-1 text-[#D4AF37] mb-4">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </div>
-        <p class="text-[#6B6B6B] mb-6 italic">
-          "La pedida de matrimonio fue perfecta gracias a Florería Lilians. 
-          El arreglo era exactamente como lo imaginé. ¡Gracias por hacer ese día aún más especial!"
-        </p>
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center">
-            <span class="text-white font-bold">LS</span>
-          </div>
-          <div>
-            <h4 class="font-bold text-[#2C2C2C]">Laura Sánchez</h4>
-            <p class="text-sm text-[#6B6B6B]">Pedida de matrimonio</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Review 4 -->
-      <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
-        <div class="flex items-center gap-1 text-[#D4AF37] mb-4">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </div>
-        <p class="text-[#6B6B6B] mb-6 italic">
-          "Siempre confiable para mis pedidos de oficina. Las flores llegan frescas y hermosas. 
-          El WhatsApp hace todo muy fácil y rápido."
-        </p>
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-[#F8C8DC] rounded-full flex items-center justify-center">
-            <span class="text-[#2C2C2C] font-bold">JP</span>
-          </div>
-          <div>
-            <h4 class="font-bold text-[#2C2C2C]">Juan Pérez</h4>
-            <p class="text-sm text-[#6B6B6B]">Decoración de oficina</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Review 5 -->
-      <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
-        <div class="flex items-center gap-1 text-[#D4AF37] mb-4">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-        </div>
-        <p class="text-[#6B6B6B] mb-6 italic">
-          "Buen servicio y flores de calidad. El arreglo que pedí para mi novia fue muy bonito. 
-          La única sugerencia sería más opciones de personalización."
-        </p>
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-[#A8D5BA] rounded-full flex items-center justify-center">
-            <span class="text-[#2C2C2C] font-bold">AH</span>
-          </div>
-          <div>
-            <h4 class="font-bold text-[#2C2C2C]">Ana Hernández</h4>
-            <p class="text-sm text-[#6B6B6B]">San Valentín</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Review 6 -->
-      <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
-        <div class="flex items-center gap-1 text-[#D4AF37] mb-4">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </div>
-        <p class="text-[#6B6B6B] mb-6 italic">
-          "¡Increíble servicio! Necesitaba flores urgentemente y me pudieron entregar en menos de 3 horas. 
-          Las flores estaban hermosas. 100% recomendado."
-        </p>
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center">
-            <span class="text-white font-bold">RM</span>
-          </div>
-          <div>
-            <h4 class="font-bold text-[#2C2C2C]">Roberto Martínez</h4>
-            <p class="text-sm text-[#6B6B6B]">Entrega urgente</p>
-          </div>
-        </div>
-      </div>
-
+    <div
+      class="w-12 h-12 bg-[#A8D5BA] rounded-full
+             flex items-center justify-center flex-shrink-0"
+    >
+      <span class="font-bold text-[#39745A]">JL</span>
     </div>
+
+    <div>
+      <h4 class="font-bold text-[#2C2C2C]">
+        Judith Loera
+      </h4>
+
+      <p class="text-sm text-[#6B6B6B]">
+        Hace 3 meses · Google
+      </p>
+    </div>
+
   </div>
-</section>
 
-<section id="reviews-cta" class="code-section relative overflow-hidden">
-  <div class="absolute inset-0 bg-[#2C2C2C]"></div>
-  <div class="absolute inset-0 opacity-10" style="background-image: url('https://assets.ls-assets.com/provider/istock/2209203572.jpg?w=1920'); background-size: cover;"></div>
-  
-  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
-    <div class="w-20 h-20 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-8">
-      <i class="fas fa-heart text-white text-3xl"></i>
+</article>
+
+<!-- RESEÑA 3 - PABLO -->
+<article
+  class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg
+         hover:shadow-xl hover:-translate-y-1
+         transition-all duration-300 flex flex-col"
+>
+
+  <div class="flex items-center justify-between mb-5">
+
+    <div class="flex gap-1 text-[#D4AF37]">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
     </div>
-    
-    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
-      ¿Ya Probaste Nuestros Servicios?
-    </h2>
-    <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-      Nos encantaría conocer tu experiencia. 
-      Comparte tu opinión y ayuda a otras personas a descubrirnos.
-    </p>
-    
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="contacto.html" class="inline-flex items-center justify-center gap-3 bg-[#A8D5BA] text-[#2C2C2C] px-8 py-4 rounded-full text-lg font-bold hover:bg-[#95C9A8] transition-all duration-300 shadow-xl">
-        <i class="fab fa-whatsapp text-2xl"></i>
-        Comparte tu Experiencia
-      </a>
-      <a href="catalogo.html" class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-[#2C2C2C] transition-all duration-300">
-        Ver Catálogo <i class="fas fa-arrow-right ml-2"></i>
-      </a>
-    </div>
+
+    <i class="fab fa-google text-xl text-[#6B6B6B]"></i>
+
   </div>
-</section>
 
-<script src="script.js" defer></script>
+  <p class="text-[#6B6B6B] italic leading-relaxed mb-7 flex-grow">
+    “Muy amables en atención, excelente presentación y precios,
+    buena atención y en el envío sí llega rápido. Gracias por tan
+    buen servicio que dan.”
+  </p>
+
+  <div class="flex items-center gap-4 border-t border-[#F5E0E9] pt-5">
+
+    <div
+      class="w-12 h-12 bg-[#F8C8DC] rounded-full
+             flex items-center justify-center flex-shrink-0"
+    >
+      <span class="font-bold text-[#C85C7C]">PV</span>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-[#2C2C2C]">
+        Pablo Vargas
+      </h4>
+
+      <p class="text-sm text-[#6B6B6B]">
+        Hace 5 meses · Google
+      </p>
+    </div>
+
+  </div>
+
+</article>
+
+<!-- RESEÑA 4 - BRYAN -->
+<article
+  class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg
+         hover:shadow-xl hover:-translate-y-1
+         transition-all duration-300 flex flex-col"
+>
+
+  <div class="flex items-center justify-between mb-5">
+
+    <div class="flex gap-1 text-[#D4AF37]">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+
+    <i class="fab fa-google text-xl text-[#6B6B6B]"></i>
+
+  </div>
+
+  <p class="text-[#6B6B6B] italic leading-relaxed mb-7 flex-grow">
+    “¡Excelente servicio y calidad! El ramo perfecto para
+    la pedida de mano.”
+  </p>
+
+  <div class="flex items-center gap-4 border-t border-[#F5E0E9] pt-5">
+
+    <div
+      class="w-12 h-12 bg-[#F8C8DC] rounded-full
+             flex items-center justify-center flex-shrink-0"
+    >
+      <span class="font-bold text-[#C85C7C]">BO</span>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-[#2C2C2C]">
+        Bryan Ortiz
+      </h4>
+
+      <p class="text-sm text-[#6B6B6B]">
+        Hace 6 meses · Google
+      </p>
+    </div>
+
+  </div>
+
+</article>
+
+<!-- RESEÑA 5 - CLARA -->
+<article
+  class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg
+         hover:shadow-xl hover:-translate-y-1
+         transition-all duration-300 flex flex-col"
+>
+
+  <div class="flex items-center justify-between mb-5">
+
+    <div class="flex gap-1 text-[#D4AF37]">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+
+    <i class="fab fa-google text-xl text-[#6B6B6B]"></i>
+
+  </div>
+
+  <p class="text-[#6B6B6B] italic leading-relaxed mb-7 flex-grow">
+    “Creí que sería caro pero todo lo contrario, superó totalmente
+    mis expectativas. Me entregaron un ramo muy bonito, muy similar
+    a la referencia que les di y a muy buen precio. ¡Se pasaron
+    de lanza! Ahora será mi florería de confianza :)”
+  </p>
+
+  <div class="flex items-center gap-4 border-t border-[#F5E0E9] pt-5">
+
+    <div
+      class="w-12 h-12 bg-[#A8D5BA] rounded-full
+             flex items-center justify-center flex-shrink-0"
+    >
+      <span class="font-bold text-[#39745A]">CZ</span>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-[#2C2C2C]">
+        Clara Zuñiga
+      </h4>
+
+      <p class="text-sm text-[#6B6B6B]">
+        Hace 6 meses · Google
+      </p>
+    </div>
+
+  </div>
+
+</article>
+
+<!-- RESEÑA 6 - ANDRIK -->
+<article
+  class="bg-white rounded-3xl p-6 lg:p-8 shadow-lg
+         hover:shadow-xl hover:-translate-y-1
+         transition-all duration-300 flex flex-col"
+>
+
+  <div class="flex items-center justify-between mb-5">
+
+    <div class="flex gap-1 text-[#D4AF37]">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+
+    <i class="fab fa-google text-xl text-[#6B6B6B]"></i>
+
+  </div>
+
+  <p class="text-[#6B6B6B] italic leading-relaxed mb-7 flex-grow">
+    “Calidad y buen servicio, pedí un ramo de 48 rosas a domicilio
+    para mi esposa y realmente me sorprendió lo rápido que me llegó.
+    El ramo en excelente estado, muy hermoso. Definitivamente
+    recomiendo mucho esta florería, 10/10.”
+  </p>
+
+  <div class="flex items-center gap-4 border-t border-[#F5E0E9] pt-5">
+
+    <div
+      class="w-12 h-12 bg-[#D4AF37] rounded-full
+             flex items-center justify-center flex-shrink-0"
+    >
+      <span class="font-bold text-white">AR</span>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-[#2C2C2C]">
+        Andrik Ismael Robledo Perez
+      </h4>
+
+      <p class="text-sm text-[#6B6B6B]">
+        Hace 7 meses · Google
+      </p>
+    </div>
+
+  </div>
+
+</article>
+
+      </div>
+
+
+      <!-- ================================================== -->
+      <!-- RESUMEN GOOGLE -->
+      <!-- ================================================== -->
+
+      <div class="mt-12 text-center">
+
+        <div
+          class="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-5
+                 bg-white border border-[#F5E0E9] rounded-2xl
+                 px-6 py-4 shadow-sm"
+        >
+
+          <div class="flex items-center gap-2">
+
+            <i class="fab fa-google text-[#D4AF37] text-xl"></i>
+
+            <span class="font-bold text-[#2C2C2C]">
+              4.8 en Google
+            </span>
+
+          </div>
+
+          <span class="hidden sm:block text-[#D4AF37]">
+            •
+          </span>
+
+          <span class="text-[#6B6B6B]">
+            317 opiniones
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ====================================================== -->
+  <!-- CTA FINAL -->
+  <!-- ====================================================== -->
+
+  <section
+    id="reviews-cta"
+    class="code-section relative overflow-hidden"
+  >
+
+    <div class="absolute inset-0 bg-[#2C2C2C]"></div>
+
+    <div
+      class="absolute inset-0 opacity-10"
+      style="
+        background-image: url('https://assets.ls-assets.com/provider/istock/2209203572.jpg?w=1920');
+        background-size: cover;
+        background-position: center;
+      "
+    ></div>
+
+
+    <div
+      class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8
+             py-16 lg:py-20 text-center"
+    >
+
+      <div
+        class="w-20 h-20 bg-[#D4AF37] rounded-full
+               flex items-center justify-center mx-auto mb-8"
+      >
+
+        <i class="fas fa-heart text-white text-3xl"></i>
+
+      </div>
+
+
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+        ¿Ya probaste nuestros servicios?
+      </h2>
+
+
+      <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+        Nos encantaría conocer tu experiencia.
+        Tu opinión ayuda a otras personas a conocernos
+        y también nos ayuda a seguir mejorando.
+      </p>
+
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+
+        <!-- GOOGLE REVIEW -->
+        <a
+          href="https://search.google.com/local/writereview?placeid=ChIJaRL4UlqXYoYRLyZ-M-Tk164"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center gap-3
+                 bg-[#A8D5BA] text-[#2C2C2C]
+                 px-8 py-4 rounded-full text-lg font-bold
+                 hover:bg-[#95C9A8]
+                 transition-all duration-300 shadow-xl"
+        >
+
+          <i class="fab fa-google text-xl"></i>
+
+          Déjanos tu opinión en Google
+
+        </a>
+
+
+        <!-- CATALOGO -->
+        <a
+          href="catalogo.html"
+          class="inline-flex items-center justify-center
+                 border-2 border-white text-white
+                 px-8 py-4 rounded-full text-lg font-semibold
+                 hover:bg-white hover:text-[#2C2C2C]
+                 transition-all duration-300"
+        >
+
+          Ver Catálogo
+
+          <i class="fas fa-arrow-right ml-2"></i>
+
+        </a>
+
+      </div>
+
+
+      <p class="text-gray-400 text-sm mt-6">
+        Gracias por confiar en Florería Lilians.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- SCRIPT GENERAL -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
