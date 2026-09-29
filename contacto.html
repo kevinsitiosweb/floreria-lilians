@@ -2675,25 +2675,8 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
 
-
-
-
   const productoSelect = document.getElementById("producto");
-
   const opcionesSelect = document.getElementById("opciones");
-
-  // =========================================
-  // SELECCIONAR PRODUCTO DESDE LA URL
-  // Ejemplo: contacto.html?producto=Ramos%20de%20rosas#pedidoForm
-  // =========================================
-
-  const params = new URLSearchParams(window.location.search);
-  const productoURL = params.get("producto");
-
-  if (productoURL && productoSelect) {
-    productoSelect.value = productoURL;
-    productoSelect.dispatchEvent(new Event("change"));
-  }
 
 
 
@@ -2754,6 +2737,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     });
+
+
+    // =========================================
+    // SELECCIONAR PRODUCTO DESDE LA URL
+    // =========================================
+
+    const params = new URLSearchParams(window.location.search);
+    const productoURL = params.get("producto");
+
+    if (productoURL && productoSelect) {
+      productoSelect.value = productoURL;
+      productoSelect.dispatchEvent(new Event("change"));
+    }
 
 
 
